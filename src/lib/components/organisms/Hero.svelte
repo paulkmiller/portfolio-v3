@@ -6,7 +6,13 @@
 	import HeroImage from '$lib/components/atoms/HeroImage.svelte';
 	import SparklingHighlight from '$lib/components/molecules/SparklingHighlight.svelte';
 	import Socials from '$lib/components/molecules/Socials.svelte';
+	import DiscoverButton from '$lib/components/atoms/DiscoverButton.svelte';
 
+function handleClick() {
+	const el = document.querySelector('#projects');
+	if (!el) return;
+	el.scrollIntoView(true);
+}
 </script>
 
 <section id="hero">
@@ -24,18 +30,9 @@
 			<span>Socials:</span>
 			<Socials />
 		</div>
-		<!-- <div class="ctas">
-			<Sparkles>
-				<Button href="#">
-					<EmailIcon slot="icon" />
-					Contact
-				</Button>
-			</Sparkles>
-			<Button color="primary" href="https://histoire-sveltekit-static-blog-template.vercel.app/">
-				<FeaturesIcon slot="icon" />
-				Site Component Library
-			</Button>
-		</div> -->
+
+		<DiscoverButton side on:click={handleClick} on:keypress={handleClick}>Discover my work ↓</DiscoverButton>
+
 	</div>
 	<HeroImage />
 </section>
@@ -75,14 +72,6 @@
 			@include for-phone-only {
 				display: none;
 			}
-		}
-
-		.ctas {
-			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
-			gap: 10px;
-			width: 100%;
 		}
 
 		@include for-phone-only {

@@ -7,11 +7,12 @@
 	import Button from '$lib/components/atoms/Button.svelte';
 	import EmailIcon from '$lib/icons/socials/email.svelte';
 	import FeaturesIcon from '$lib/icons/features.svelte';
+
 </script>
 
 <section id="about" class="wrapper">
 	<div class="text">
-		<h2>Bio</h2>
+		<!-- <h2>Hello!</h2> -->
 		<p>
 			For years, I have worked as a web developer primarily focused on the Frontend with JavaScript and its many frameworks, with pivots to Ruby on Rails, PHP / Wordpress / Pimcore, along with Vue & Node. My experience ranges from small early stage startups to large enterprise level companies. Over time, I have been responsible for developing a range of different products including custom content management / live-service applications, brochure and multi-site applications, WCAG compliant frontend frameworks, spikes and subsequent epics, and been the frontrunner in various efforts towards making projects I am involved with as WCAG compliant as possible given time constraints.
 		</p>
@@ -42,6 +43,7 @@
 		align-items: center;
 		justify-content: space-between;
 		padding-bottom: 50px;
+		gap: 50px;
 
 		@include for-phone-only {
 			grid-template-columns: 1fr;
