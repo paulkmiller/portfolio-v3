@@ -1,5 +1,5 @@
 import { f as filteredPosts } from "../../../chunks/index3.js";
-const features = [
+const projects = [
   {
     name: "Markdown Support",
     description: "Blog posts are written in Markdown, a simple and nearly-universal format. This means you can bring over your posts from other platforms, and easily export to another if you want to.",
@@ -37,7 +37,7 @@ const features = [
 async function load() {
   const posts = filteredPosts.slice(0, 4);
   return {
-    features,
+    projects,
     posts
   };
 }

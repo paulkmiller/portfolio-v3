@@ -29,6 +29,6 @@ const Socials = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 </div>`;
 });
 export {
-  Github as G,
+  Email as E,
   Socials as S
 };

@@ -403,7 +403,7 @@
     "src": "src/routes/(waves)/+layout.svelte"
   },
   "src/routes/(waves)/+page.css": {
-    "file": "_app/immutable/assets/_page.3dc67924.css",
+    "file": "_app/immutable/assets/_page.16ffce02.css",
     "src": "src/routes/(waves)/+page.css"
   },
   "src/routes/(waves)/+page.server.ts": {
@@ -416,13 +416,13 @@
   },
   "src/routes/(waves)/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.3dc67924.css"
+      "_app/immutable/assets/_page.16ffce02.css"
     ],
     "file": "entries/pages/(waves)/_page.svelte.js",
     "imports": [
       "_index2.js",
-      "_Socials.js",
       "_Button.js",
+      "_Socials.js",
       "_Image.js",
       "_ContentSection.js"
     ],
@@ -430,12 +430,12 @@
     "src": "src/routes/(waves)/+page.svelte"
   },
   "src/routes/(waves)/404/+page.css": {
-    "file": "_app/immutable/assets/_error.e3eb7d9c.css",
+    "file": "_app/immutable/assets/_error.a9d4fba1.css",
     "src": "src/routes/(waves)/404/+page.css"
   },
   "src/routes/(waves)/404/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_error.e3eb7d9c.css"
+      "_app/immutable/assets/_error.a9d4fba1.css"
     ],
     "file": "entries/pages/(waves)/404/_page.svelte.js",
     "imports": [
@@ -471,12 +471,12 @@
     "src": "src/routes/(waves)/blog/+page.svelte"
   },
   "src/routes/+error.css": {
-    "file": "_app/immutable/assets/_error.e3eb7d9c.css",
+    "file": "_app/immutable/assets/_error.a9d4fba1.css",
     "src": "src/routes/(waves)/404/+page.css"
   },
   "src/routes/+error.svelte": {
     "css": [
-      "_app/immutable/assets/_error.e3eb7d9c.css"
+      "_app/immutable/assets/_error.a9d4fba1.css"
     ],
     "file": "entries/pages/_error.svelte.js",
     "imports": [
@@ -489,7 +489,7 @@
     "src": "src/routes/+error.svelte"
   },
   "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout.1718a7b6.css",
+    "file": "_app/immutable/assets/_layout.1b3098bc.css",
     "src": "src/routes/+layout.css"
   },
   "src/routes/+layout.svelte": {
@@ -536,7 +536,7 @@
       "_app/immutable/assets/ubuntu-mono-latin-400-normal.b07e4ebe.woff2"
     ],
     "css": [
-      "_app/immutable/assets/_layout.1718a7b6.css"
+      "_app/immutable/assets/_layout.1b3098bc.css"
     ],
     "file": "entries/pages/_layout.svelte.js",
     "imports": [
