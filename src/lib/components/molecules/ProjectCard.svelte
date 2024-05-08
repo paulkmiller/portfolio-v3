@@ -16,7 +16,7 @@
 	</div>
 	<div class="content" slot="content">
 		<div class="title">
-			<span>{name}</span>
+			<span>{@html name}</span>
 		</div>
 		<p>{description}</p>
 	</div>

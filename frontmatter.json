@@ -62,7 +62,7 @@
 		}
 	],
 	"frontMatter.framework.id": "other",
-	"frontMatter.content.publicFolder": "",
+	"frontMatter.content.publicFolder": "/static",
 	"frontMatter.content.pageFolders": [
 		{
 			"title": "posts",

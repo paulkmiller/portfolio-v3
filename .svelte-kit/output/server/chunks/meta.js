@@ -4,8 +4,7 @@ const keywords = [
   "SvelteKit",
   "Template",
   "Blog",
-  "Paul Miller",
-  "Static Site"
+  "Paul Miller"
 ];
 const description = "The third iteration of my portfolio site, now with a blog!";
 const title = "Paul Miller Web Developer";

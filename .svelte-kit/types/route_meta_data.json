@@ -26,6 +26,10 @@
 		"src/routes/(blog-article)/+layout.server.ts",
 		"src/routes/+layout.ts"
 	],
+	"/(blog-article)/moving-to-colorado": [
+		"src/routes/(blog-article)/+layout.server.ts",
+		"src/routes/+layout.ts"
+	],
 	"/(blog-article)/project-structure": [
 		"src/routes/(blog-article)/+layout.server.ts",
 		"src/routes/+layout.ts"

@@ -25,7 +25,7 @@
 	</div>
 		<div class="ctas">
 			<Sparkles>
-				<Button href="#">
+				<Button href="mailto:paulkerrymiller@gmail.com">
 					<EmailIcon slot="icon" />
 					Contact Me
 				</Button>

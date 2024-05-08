@@ -77,14 +77,13 @@ const Footer_wave = create_ssr_component(($$result, $$props, $$bindings, slots) 
 });
 const Footer_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "footer.svelte-1m94jhe.svelte-1m94jhe{height:340px;width:100%;background:linear-gradient(60deg, var(--color--waves-start) 0%, var(--color--waves-end) 100%);display:grid;grid-template-rows:120px 1fr}footer.svelte-1m94jhe .content.svelte-1m94jhe{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:15px;font-weight:600;text-align:center}footer.svelte-1m94jhe .content .credits.svelte-1m94jhe{font-weight:400;font-size:90%;color:var(--color--text-shade)}footer.svelte-1m94jhe .content .socials.svelte-1m94jhe{display:flex;align-items:center;gap:20px}footer.svelte-1m94jhe a.svelte-1m94jhe:hover{filter:drop-shadow(0px 0px 3px var(--color--primary))}",
+  code: "footer.svelte-1m94jhe.svelte-1m94jhe{height:340px;width:100%;background:linear-gradient(60deg, var(--color--waves-start) 0%, var(--color--waves-end) 100%);display:grid;grid-template-rows:120px 1fr}footer.svelte-1m94jhe .content.svelte-1m94jhe{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:15px;font-weight:600;text-align:center}footer.svelte-1m94jhe .content .credits.svelte-1m94jhe{font-weight:400;font-size:90%;color:var(--color--text-shade)}footer.svelte-1m94jhe .content .socials.svelte-1m94jhe{display:flex;align-items:center;gap:20px}",
   map: null
 };
 const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `<footer class="svelte-1m94jhe"><div class="wave">${validate_component(Footer_wave, "FooterWave").$$render($$result, {}, {}, {})}</div>
-	<div class="content svelte-1m94jhe"><div class="credits svelte-1m94jhe">Powered by <a href="https://kit.svelte.dev/" target="_blank" rel="noopener noreferrer" class="svelte-1m94jhe">SvelteKit</a>. Icons by
-			<a href="https://iconoir.com/" target="_blank" rel="noopener noreferrer" class="svelte-1m94jhe">Iconoir</a>.
+	<div class="content svelte-1m94jhe"><div class="credits svelte-1m94jhe">Site powered by several 🐹&#39;s and ☕
 		</div>
 		<div class="socials svelte-1m94jhe">${validate_component(Socials, "Socials").$$render($$result, {}, {}, {})}
 			${validate_component(RssLink, "RssLink").$$render($$result, {}, {}, {})}

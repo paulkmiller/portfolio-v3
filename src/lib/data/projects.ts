@@ -2,9 +2,9 @@ import type { Project } from "$lib/utils/types";
 
 export default [ 
   {
-    name: 'PaulHealth & Blog',
+    name: '<a href="https://paulhealth.ue.r.appspot.com/home/" target="_blank">PaulHealth & Blog</a>',
     description:
-      'Sveltekit 1.0 using Contentful as a headless CMS. Each component is configurable, the layout organized, and all contact entries are managed and sent to Contentful. Deployed using GCP.',
+      'Sveltekit 1.0 using Contentful as a headless CMS. Each component is configurable, the layout organized, and all contact entries are managed by and sent to Contentful. Deployed using GCP.',
     image: 'images/projects/paulHealth.png',
     tags: [
       { label: 'Sveltekit' }, 
@@ -13,7 +13,7 @@ export default [
     ]
   }, 
   {
-    name: 'Jumpcloud Signup & Onboarding',
+    name: '<a href="https://console.jumpcloud.com/signup" target="_blank">Jumpcloud Signup & Onboarding</a>',
     description:
       'Part of the growth team, I focused on the signup design and onboarding processes when first signing up for a Jumpcloud accout.',
     image: 'images/projects/Jumpcloud.png',
@@ -26,7 +26,7 @@ export default [
     ]
   }, 
   {
-    name: 'Multiplying Good',
+    name: '<a href="https://www.multiplyinggood.org/" target="_blank">Multiplying Good</a>',
     description:
       'Built entire Front End for Multiplying Good\'s visual refresh. The site is built with Pimcore as a headless CMS.',
     image: 'images/projects/MultiplyingGood.png',
@@ -39,7 +39,7 @@ export default [
     ]
   }, 
   {
-    name: 'Politico Pro',
+    name: '<a href="https://www.politicopro.com/" target="_blank">Politico Pro</a>',
     description:
       'Turned PoliticoPro into a WCAG AAA Compliant site using the existing codebase. This was a huge project that required a lot of attention to detail.',
     image: 'images/projects/PoliticoPro.png',
@@ -51,7 +51,7 @@ export default [
     ]
   },
   {
-    name: 'Grafik',
+    name: '<a href="https://grafik.agency/" target="_blank">Grafik</a>',
     description:
       'Full rebuild of the corporate site for Grafik Digital. The site was built with WordPress, is fully responsive, and included a custom blog.',
     image: 'images/projects/Grafik.png',

@@ -23,111 +23,17 @@
     </image>
     
         <item>
-          <guid>https://paulkmiller.com/customization</guid>
-          <title>How to Customize this Template</title>
-          <description>How to customize what you're seeing here and make it your own.</description>
-          <link>https://paulkmiller.com/customization</link>
-          <pubDate>Sat, 22 Apr 2023 14:55:27 -0700</pubDate>
-          <category>Documentation</category>
+          <guid>https://paulkmiller.com/moving-to-colorado</guid>
+          <title>Moving To Colorado</title>
+          <description></description>
+          <link>https://paulkmiller.com/moving-to-colorado</link>
+          <pubDate>Wed, 08 May 2024 14:07:09 -0700</pubDate>
+          
           <content:encoded><![CDATA[
             <div style="margin: 50px 0; font-style: italic;">
               If anything looks wrong, 
               <strong>
-                <a href="https://paulkmiller.com/customization">
-                  read on the site!
-                </a>
-              </strong>
-            </div>
-
-            <p>In general, content can be modified by editing the <strong>organisms</strong> and the pages themselves. Below is a list of the most common changes that you may want to make.</p>
-<h2 id="domainsite-url"><a class="heading-link" title="Permalink" aria-hidden="true" href="#domainsite-url"><span>#</span></a>Domain/site URL</h2>
-<p>The first thing you might want to do is replace the domain of of the site with your own. There are two places where you need to do that:</p>
-<ul><li>In the <code>package.json</code> file, check the <code>postbuild</code> script. Change the domain there to your own, so it ends up like this: <code>svelte-sitemap --domain https://your-domain.com</code>. This is used to generate the sitemap of your website, which is used by search engines to index your site.</li>
-<li>In the <code>src/lib/data/meta.ts</code> file, change the <code>siteBaseUrl</code> property to your own domain. This is used in multiple parts of the app wherever the site needs to link to itself.</li></ul>
-<h2 id="headersite-logo"><a class="heading-link" title="Permalink" aria-hidden="true" href="#headersite-logo"><span>#</span></a>Header/site logo</h2>
-<p>To replace the logo that appears in the header, modify or replace the contents of the <code>Logo.svelte</code> atom.</p>
-<p>The links that appear on the header can be modified directly in the <code>Header.svelte</code> organism.</p>
-<h2 id="hero-section"><a class="heading-link" title="Permalink" aria-hidden="true" href="#hero-section"><span>#</span></a>Hero section</h2>
-<p>The hero section is the first section of the site’s home page. It is composed of a Heading, the <em>intro</em> text, and a list of buttons/CTAs. The contents of this section can be modified directly in the <code>Hero.svelte</code> organism.</p>
-<h2 id="about-section"><a class="heading-link" title="Permalink" aria-hidden="true" href="#about-section"><span>#</span></a>About section</h2>
-<p>The about section contains another headline, a paragraph of text, some social media links, and optionally an image. The contents of this section can be modified directly in the <code>About.svelte</code> organism.</p>
-<h2 id="social-links"><a class="heading-link" title="Permalink" aria-hidden="true" href="#social-links"><span>#</span></a>Social Links</h2>
-<p>The social links are contained in the <code>Socials.svelte</code> molecule and can be used in any page. This template shows them on the About section and in the Footer.</p>
-<h2 id="footer"><a class="heading-link" title="Permalink" aria-hidden="true" href="#footer"><span>#</span></a>Footer</h2>
-<p>The footer contains some credits, a list of social links, and the RSS/Theme toggle. The contents of this section can be modified directly in the <code>Footer.svelte</code> organism.</p>
-<h2 id="colors"><a class="heading-link" title="Permalink" aria-hidden="true" href="#colors"><span>#</span></a>Colors</h2>
-<p>You can change the color palette of the website just by tweaking the <code>_themes.scss</code> file. The file uses the <code>define-color</code> scss function to automatically set the color variables in Hex, RGB and HSL formats, so you can choose whichever format you need.</p>
-<p>The main theme colors (primary and secondary) have two variants: shade and tint. The shade is a lighter version of the color (darker in dark mode), and the tint should almost match the page’s background, so that in light mode, it’s really bright, and in dark mode, it’s really dark.</p>
-<h2 id="fonts"><a class="heading-link" title="Permalink" aria-hidden="true" href="#fonts"><span>#</span></a>Fonts</h2>
-<p>This template uses the Inter, Merriweather and Ubuntu Mono font families. You can change the font family by editing the <code>_variables.scss</code> file, and the code is already set up to accept a default font, a heading font, and a monospace font.</p>
-<p>I recommend using <a href="https://fontsource.org/" rel="nofollow">Fontsource</a> to import the fonts you need, or self-hosting them. In case you’re using Fontsource, you can import the fonts in <code>global.scss</code> file to make sure they’re available in the entire site.</p>
-<h2 id="favicon"><a class="heading-link" title="Permalink" aria-hidden="true" href="#favicon"><span>#</span></a>Favicon</h2>
-<p>Favicons are located in the <code>static/favicons</code> folder. I like to use <a href="https://realfavicongenerator.net" rel="nofollow">Real Favicon Generator</a> to generate mine, but you can use any other tool you like. I wrote <a href="https://fantinel.dev/fixing-favicons" rel="nofollow">a blog post about Favicons</a> in case you want to learn more about them.</p>
-<h2 id="social-media-link-preview"><a class="heading-link" title="Permalink" aria-hidden="true" href="#social-media-link-preview"><span>#</span></a>Social Media Link Preview</h2>
-<p>You probably want to customize how links to your website look when posted on social media/messaging apps. To do that, you can edit the info in <code>src/lib/data/meta.ts</code>. There, you can edit the site’s title, description, tags (used by search engines) and the image that appears when sharing a link.</p>
-          ]]></content:encoded>
-          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://paulkmiller.com//images/posts/customization.jpg"/>
-          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://paulkmiller.com//images/posts/customization.jpg"/>          
-        </item>
-      
-        <item>
-          <guid>https://paulkmiller.com/project-structure</guid>
-          <title>Project Structure</title>
-          <description>How code and structure are organized.</description>
-          <link>https://paulkmiller.com/project-structure</link>
-          <pubDate>Sat, 22 Apr 2023 14:55:21 -0700</pubDate>
-          <category>Documentation</category>
-          <content:encoded><![CDATA[
-            <div style="margin: 50px 0; font-style: italic;">
-              If anything looks wrong, 
-              <strong>
-                <a href="https://paulkmiller.com/project-structure">
-                  read on the site!
-                </a>
-              </strong>
-            </div>
-
-            <p>This project follows the basic <a href="https://kit.svelte.dev/docs/project-structure" rel="nofollow">SvelteKit structure</a>, with some added conventions to make customization a post-management easier.</p>
-<h2 id="components"><a class="heading-link" title="Permalink" aria-hidden="true" href="#components"><span>#</span></a>Components</h2>
-<p>The components are organized following the <a href="https://medium.com/@WeAreMobile1st/atomic-design-getting-started-916bc81bad0e" rel="nofollow">Atomic Design</a> principles, albeit somewhat simplified. Components are in the <code>src/lib/components</code> folder, and are organized in the following way:</p>
-<h3 id="atoms"><a class="heading-link" title="Permalink" aria-hidden="true" href="#atoms"><span>#</span></a>Atoms</h3>
-<p>Atoms are the most basic components, which can be seen as building blocks for other components. They’re small and self-contained, and do only one thing. Examples of atoms are buttons, inputs, and tags.</p>
-<h3 id="molecules"><a class="heading-link" title="Permalink" aria-hidden="true" href="#molecules"><span>#</span></a>Molecules</h3>
-<p>Molecules are groups of atoms that work together to form a more complex component. Examples of molecules are cards, groups of links, or an alert callout.</p>
-<h3 id="organisms"><a class="heading-link" title="Permalink" aria-hidden="true" href="#organisms"><span>#</span></a>Organisms</h3>
-<p>Organisms, in this project, are code blocks that represent a section of a page, such as the header, footer and hero section. They can be used directly in a page as a sort of building block, so the page’s code can be as simple as this:</p>
-<div class="code-block svelte-1pkpsrg"><div class="filename svelte-1pkpsrg">+page.svelte</div>
-	<div class="lang svelte-1pkpsrg">html</div>
-	<pre class="language-html"><!-- HTML_TAG_START --><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Header</span> <span class="token punctuation">/></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Hero</span> <span class="token punctuation">/></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>About</span> <span class="token punctuation">/></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Footer</span> <span class="token punctuation">/></span></span></code><!-- HTML_TAG_END --></pre>
-</div>
-<h2 id="component-gallery"><a class="heading-link" title="Permalink" aria-hidden="true" href="#component-gallery"><span>#</span></a>Component Gallery</h2>
-<p>This project uses <a href="https://histoire.dev" rel="nofollow">Histoire</a> to be able to see and develop components in isolation. To open it, run <code>npm run story:dev</code>. This way you can customize and build new components with placeholder content and without worrying about where to put them in a page.</p>
-<h2 id="pages"><a class="heading-link" title="Permalink" aria-hidden="true" href="#pages"><span>#</span></a>Pages</h2>
-<p>Pages obey the default SvelteKit structure, but can be summarized as follows:</p>
-<ul><li>There are two different file types: the pages (<code>+page.svelte</code>) and the layouts (<code>+layout.svelte</code>). Layouts are a way to reuse the same structure between different pages without having to duplicate code;</li>
-<li>There are two different page layouts in this site: the “Waves” layout, which all pages inside the <code>(waves)</code> folder use, and the “Blog Article” layout, which all pages inside the <code>(blog-article)</code> folder use;</li></ul>
-<h2 id="blog-posts"><a class="heading-link" title="Permalink" aria-hidden="true" href="#blog-posts"><span>#</span></a>Blog Posts</h2>
-<p>To know how blog posts work and how to create new ones, check out <a href="/blog-posts">How Blog Posts Work</a>.</p>
-          ]]></content:encoded>
-          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://paulkmiller.com//images/posts/project-structure.jpg"/>
-          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://paulkmiller.com//images/posts/project-structure.jpg"/>          
-        </item>
-      
-        <item>
-          <guid>https://paulkmiller.com/blog-posts</guid>
-          <title>How Blog Posts Work</title>
-          <description>How to manage existing blog posts and create new ones</description>
-          <link>https://paulkmiller.com/blog-posts</link>
-          <pubDate>Sat, 22 Apr 2023 14:55:15 -0700</pubDate>
-          <category>Documentation</category>
-          <content:encoded><![CDATA[
-            <div style="margin: 50px 0; font-style: italic;">
-              If anything looks wrong, 
-              <strong>
-                <a href="https://paulkmiller.com/blog-posts">
+                <a href="https://paulkmiller.com/moving-to-colorado">
                   read on the site!
                 </a>
               </strong>
@@ -166,8 +72,8 @@ tags:
 <h2 id="rss"><a class="heading-link" title="Permalink" aria-hidden="true" href="#rss"><span>#</span></a>RSS</h2>
 <p>This template automatically generates a RSS feed of your blog posts. It is generated in the <code>src/routes/rss.xml/+server.ts</code> file, and it is available at the <code>/rss.xml</code> URL.</p>
           ]]></content:encoded>
-          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://paulkmiller.com//images/posts/blog-posts.jpg"/>
-          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://paulkmiller.com//images/posts/blog-posts.jpg"/>          
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://paulkmiller.com//images/posts/colorado.jpg"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://paulkmiller.com//images/posts/colorado.jpg"/>          
         </item>
       
   </channel>

@@ -1,39 +1,73 @@
 import { c as create_ssr_component, v as validate_component } from "./index2.js";
+import { C as Callout } from "./Callout.js";
 import { C as CodeBlock } from "./CodeBlock.js";
+import { I as Image } from "./Image.js";
 const metadata = {
-  "slug": "project-structure",
-  "title": "Project Structure",
-  "date": "2023-04-22T21:55:21.800Z",
-  "excerpt": "How code and structure are organized.",
-  "coverImage": "/images/posts/project-structure.jpg",
-  "tags": ["Documentation"]
+  "title": "Moving To Colorado",
+  "slug": "moving-to-colorado",
+  "coverImage": "/images/posts/colorado.jpg",
+  "excerpt": "",
+  "date": "2024-05-08T21:07:09.628Z",
+  "updated": "2024-05-08T21:07:09.628Z",
+  "hidden": false,
+  "tags": [],
+  "keywords": [],
+  "type": "default"
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<p>This project follows the basic <a href="https://kit.svelte.dev/docs/project-structure" rel="nofollow">SvelteKit structure</a>, with some added conventions to make customization a post-management easier.</p>
-<h2 id="components"><a class="heading-link" title="Permalink" aria-hidden="true" href="#components"><span>#</span></a>Components</h2>
-<p>The components are organized following the <a href="https://medium.com/@WeAreMobile1st/atomic-design-getting-started-916bc81bad0e" rel="nofollow">Atomic Design</a> principles, albeit somewhat simplified. Components are in the <code>src/lib/components</code> folder, and are organized in the following way:</p>
-<h3 id="atoms"><a class="heading-link" title="Permalink" aria-hidden="true" href="#atoms"><span>#</span></a>Atoms</h3>
-<p>Atoms are the most basic components, which can be seen as building blocks for other components. They’re small and self-contained, and do only one thing. Examples of atoms are buttons, inputs, and tags.</p>
-<h3 id="molecules"><a class="heading-link" title="Permalink" aria-hidden="true" href="#molecules"><span>#</span></a>Molecules</h3>
-<p>Molecules are groups of atoms that work together to form a more complex component. Examples of molecules are cards, groups of links, or an alert callout.</p>
-<h3 id="organisms"><a class="heading-link" title="Permalink" aria-hidden="true" href="#organisms"><span>#</span></a>Organisms</h3>
-<p>Organisms, in this project, are code blocks that represent a section of a page, such as the header, footer and hero section. They can be used directly in a page as a sort of building block, so the page’s code can be as simple as this:</p>
-${validate_component(CodeBlock, "CodeBlock").$$render($$result, { lang: "html", filename: "+page.svelte" }, {}, {
+  return `<p>All blog posts are located inside the <code>src/routes/(blog-article)</code> folder. Each folder inside it represents a blog post, and each folder has a <code>+page.md</code> file, which is the file that contains the post’s content.</p>
+<p>This way, the URL for each blog post is generated with the folder’s name. For example, the folder <code>src/routes/(blog-article)/how-blog-posts-work</code> will generate the URL <code>https://mysite.com/how-blog-posts-work</code>.</p>
+<p>All posts are Markdown files, which means you can use the <a href="https://www.markdownguide.org/basic-syntax" rel="nofollow">Markdown syntax</a> in them, and it will work out of the box. However, since this projects uses <a href="https://mdsvex.pngwn.io/" rel="nofollow">MDsveX</a> to parse Markdown, you can also use Svelte components inside them! This means that the components used in other pages can also be used in blog posts.</p>
+${validate_component(Callout, "Callout").$$render($$result, { type: "info" }, {}, {
     default: () => {
-      return `<pre class="language-html"><!-- HTML_TAG_START -->${`<code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Header</span> <span class="token punctuation">/></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Hero</span> <span class="token punctuation">/></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>About</span> <span class="token punctuation">/></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Footer</span> <span class="token punctuation">/></span></span></code>`}<!-- HTML_TAG_END --></pre>`;
+      return `This is a Svelte component inside a Markdown file!
+`;
     }
   })}
-<h2 id="component-gallery"><a class="heading-link" title="Permalink" aria-hidden="true" href="#component-gallery"><span>#</span></a>Component Gallery</h2>
-<p>This project uses <a href="https://histoire.dev" rel="nofollow">Histoire</a> to be able to see and develop components in isolation. To open it, run <code>npm run story:dev</code>. This way you can customize and build new components with placeholder content and without worrying about where to put them in a page.</p>
-<h2 id="pages"><a class="heading-link" title="Permalink" aria-hidden="true" href="#pages"><span>#</span></a>Pages</h2>
-<p>Pages obey the default SvelteKit structure, but can be summarized as follows:</p>
-<ul><li>There are two different file types: the pages (<code>+page.svelte</code>) and the layouts (<code>+layout.svelte</code>). Layouts are a way to reuse the same structure between different pages without having to duplicate code;</li>
-<li>There are two different page layouts in this site: the “Waves” layout, which all pages inside the <code>(waves)</code> folder use, and the “Blog Article” layout, which all pages inside the <code>(blog-article)</code> folder use;</li></ul>
-<h2 id="blog-posts"><a class="heading-link" title="Permalink" aria-hidden="true" href="#blog-posts"><span>#</span></a>Blog Posts</h2>
-<p>To know how blog posts work and how to create new ones, check out <a href="/blog-posts">How Blog Posts Work</a>.</p>`;
+<h2 id="processing"><a class="heading-link" title="Permalink" aria-hidden="true" href="#processing"><span>#</span></a>Processing</h2>
+<p>Besides the blog post page itself, the blog posts can be displayed in other places, such as the <code>/blog</code> page, which lists all blog posts, and the <code>&lt;RecentPosts&gt;</code> component, used in the home page.</p>
+<p>To be able to do that, posts are processed in the <code>src/lib/data/blog-posts/index.ts</code> file. That file imports the blog post files and processes them, so we’re able to use some of the post’s metadata to list them. For example, we get the post’s title, cover image, and calculate the reading time based on its content, so that information is displayed in the blog post cards in the <code>/blog</code> page.</p>
+<p>There is also some basic logic to get related posts based on a post’s tags. The logic should be straightforward enough to modify it to your needs.</p>
+<h2 id="creating-a-new-post"><a class="heading-link" title="Permalink" aria-hidden="true" href="#creating-a-new-post"><span>#</span></a>Creating a new post</h2>
+<p>To create a new post, create a new folder inside the <code>src/routes/(blog-article)</code> folder, and inside it, create a <code>+page.md</code> file. The folder name will be used as the post’s URL slug, so make sure it’s a valid URL slug.</p>
+<p>Inside the <code>+page.md</code> file, you must start with the front matter, which is a YAML-like syntax that is used to define metadata for the post. The front matter must be the first thing in the file, and must be separated from the rest of the content by three dashes (<code>---</code>). An example of a front matter is:</p>
+${validate_component(CodeBlock, "CodeBlock").$$render($$result, { lang: "markdown" }, {}, {
+    default: () => {
+      return `<pre class="language-md"><!-- HTML_TAG_START -->${`<code class="language-md"><span class="token front-matter-block"><span class="token punctuation">---</span>
+<span class="token front-matter yaml language-yaml">slug: my-new-blog-post
+title: My New Blog Post
+date: 2023-04-22T20:45:25.350Z
+excerpt: A short description of the post
+coverImage: /images/posts/cover-image.jpg
+tags:
+  - Example</span>
+<span class="token punctuation">---</span></span></code>`}<!-- HTML_TAG_END --></pre>`;
+    }
+  })}
+<h2 id="managing-blog-posts"><a class="heading-link" title="Permalink" aria-hidden="true" href="#managing-blog-posts"><span>#</span></a>Managing blog posts</h2>
+<p>I highly recommend the <a href="https://frontmatter.codes/" rel="nofollow">Front Matter VS Code extension</a> to manage blog posts. It gives you a nice CMS-like UI to manage the front matter of all blog posts, as well as a preview of their content. It is, of course, optional, and you can manage everything directly in the Markdown files if you prefer.</p>
+${validate_component(Image, "Image").$$render(
+    $$result,
+    {
+      fullBleed: true,
+      src: "/images/posts/frontmatter-preview-dashboard.png",
+      alt: "Screenshot of the Front Matter VS Code extension, showing the dashboard with all posts"
+    },
+    {},
+    {}
+  )}
+${validate_component(Image, "Image").$$render(
+    $$result,
+    {
+      fullBleed: true,
+      src: "/images/posts/frontmatter-preview-edit.png",
+      alt: "Screenshot of the Front Matter VS Code extension, showing the post editing UI"
+    },
+    {},
+    {}
+  )}
+<h2 id="rss"><a class="heading-link" title="Permalink" aria-hidden="true" href="#rss"><span>#</span></a>RSS</h2>
+<p>This template automatically generates a RSS feed of your blog posts. It is generated in the <code>src/routes/rss.xml/+server.ts</code> file, and it is available at the <code>/rss.xml</code> URL.</p>`;
 });
 const __vite_glob_0_2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
