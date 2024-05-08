@@ -17,17 +17,17 @@
 		flex-direction: row;
 		width: max-content;
 		cursor: pointer;
-		background-color: var(--neutral-one);
+		background-color: var(--color--discover-neutral-one);
 		transition: filter 0.2s var(--bezier-one), transform 0.5s var(--bezier-one);
 		user-select: none;
-		margin: 0;
+		margin: 20px 0 0;
 		padding: 1rem 2rem;
-		color: var(--yellow);
+		color: var(--color--discover-neutral-four);
 		font-weight: 300;
 		font-size: 1.6rem;
 		font-family: var(--font-two);
 		letter-spacing: -0.075em;
-		border: 1px solid var(--neutral-four);
+		border: 1px solid var(--color--discover-neutral-four);
 
 		&:active {
 			transform: scale(95%);
@@ -58,7 +58,7 @@
 		content: '';
 		height: 100%;
 		width: 1.6rem;
-		background-color: var(--yellow);
+		background-color: var(--color--discover-neutral-four);
 
 		@media screen and (max-width: 868px) {
 			display: none;

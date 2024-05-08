@@ -8,8 +8,8 @@
 
 <ContentSection
 	id="projects"
-	title="Projects"
-	description="Here are some of my projects."
+	title="code://work"
+	description="Here is some of my past work"
 >
 	<div class="projects-container">
 		<div class="three-group-grid">

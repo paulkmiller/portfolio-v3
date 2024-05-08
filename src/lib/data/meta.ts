@@ -10,7 +10,6 @@ export const keywords = [
 	'Template',
 	'Blog',
 	'Paul Miller',
-	'Static Site'
 ];
 
 export const description =

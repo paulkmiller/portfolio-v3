@@ -76,9 +76,13 @@ h6 {
 p {
 	color: var(--color--text-light);
 	font-weight: 300;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	letter-spacing: -0rem;
 	line-height: 1.75rem;
+	@include for-phone-only {
+		font-size: 1rem;
+		font-weight: 500;
+	}
 }
 
 @media (max-width: 868px) {
@@ -100,7 +104,7 @@ p {
 	}
 
 	p {
-		font-size: 1rem;
+		font-size: .9rem;
 	}
 }
 

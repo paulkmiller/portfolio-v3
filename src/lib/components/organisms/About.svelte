@@ -14,20 +14,22 @@
 	<div class="text">
 		<!-- <h2>Hello!</h2> -->
 		<p>
-			For years, I have worked as a web developer primarily focused on the Frontend with JavaScript and its many frameworks, with pivots to Ruby on Rails, PHP / Wordpress / Pimcore, along with Vue & Node. My experience ranges from small early stage startups to large enterprise level companies. Over time, I have been responsible for developing a range of different products including custom content management / live-service applications, brochure and multi-site applications, WCAG compliant frontend frameworks, spikes and subsequent epics, and been the frontrunner in various efforts towards making projects I am involved with as WCAG compliant as possible given time constraints.
+			Hey there! I'm Paul, a frontend developer who loves bringing designs to life through code. There's nothing quite like the thrill of transforming a static mockup into an interactive, engaging experience that users can enjoy.
+		</p>
+		<p>
+			Over the years, I've had the opportunity to work with a wide range of technologies, from JavaScript frameworks like React and Vue to backend systems like Ruby on Rails and PHP. More recently, I've been diving into Sveltekit and Go, along with headless CMS solutions like Strapi and Contentful. 
+		</p>
+		<p>
+			If you're looking for a frontend developer who's equal parts creative and technical, I'd love to chat. Feel free to check out my blog if you want to see what I'm up too! And if you've got a design that you're dying to see brought to life, let's definitely talk!
 		</p>
 	</div>
 		<div class="ctas">
 			<Sparkles>
 				<Button href="#">
 					<EmailIcon slot="icon" />
-					Contact
+					Contact Me
 				</Button>
 			</Sparkles>
-			<Button color="primary" href="https://histoire-sveltekit-static-blog-template.vercel.app/">
-				<FeaturesIcon slot="icon" />
-				Site Component Library
-			</Button>
 		</div>
 </section>
 
@@ -43,7 +45,7 @@
 		align-items: center;
 		justify-content: space-between;
 		padding-bottom: 50px;
-		gap: 50px;
+		gap: 20px;
 
 		@include for-phone-only {
 			grid-template-columns: 1fr;
@@ -51,33 +53,10 @@
 			gap: 20px;
 		}
 
-		.ctas {
-			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
-			gap: 10px;
-			width: 100%;
-		}
-
-		.info {
+		.text {
 			display: flex;
 			flex-direction: column;
-			gap: 10px;
-			h2 {
-				@include for-phone-only {
-					text-align: center;
-				}
-			}
-
-			p {
-				@include for-phone-only {
-					text-align: justify;
-				}
-			}
-
-			@include for-phone-only {
-				gap: 20px;
-			}
+			gap: 20px;
 		}
 
 		.socials {
@@ -92,6 +71,14 @@
 					display: none;
 				}
 			}
+		}
+
+		.ctas {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			gap: 10px;
+			width: 100%;
 		}
 
 		.image {

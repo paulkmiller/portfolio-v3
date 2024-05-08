@@ -11,14 +11,6 @@
 	<a
 		href="#"
 		target="_blank"
-		rel="noopener noreferrer"
-		title="Say Hi on Telegram"
-	>
-		<TelegramIcon />
-	</a>
-	<a
-		href="#"
-		target="_blank"
 		rel="me noreferrer"
 		title="Say Hi on Mastodon"
 	>

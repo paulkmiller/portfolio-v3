@@ -1,18 +1,17 @@
 <script>
-	import FeaturesIcon from '$lib/icons/features.svelte';
-	import EmailIcon from '$lib/icons/socials/email.svelte';
-	import Button from '$lib/components/atoms/Button.svelte';
-	import Sparkles from '$lib/components/atoms/Sparkles.svelte';
+	import Tooltip from '$lib/components/atoms/Tooltip.svelte';
 	import HeroImage from '$lib/components/atoms/HeroImage.svelte';
 	import SparklingHighlight from '$lib/components/molecules/SparklingHighlight.svelte';
 	import Socials from '$lib/components/molecules/Socials.svelte';
 	import DiscoverButton from '$lib/components/atoms/DiscoverButton.svelte';
 
-function handleClick() {
-	const el = document.querySelector('#projects');
-	if (!el) return;
-	el.scrollIntoView(true);
-}
+	function handleClick() {
+		const el = document.querySelector('#projects');
+		if (!el) return;
+		el.scrollIntoView(true);
+	}
+
+	$: tip = 'Almost certainly getting my butt kicked'
 </script>
 
 <section id="hero">
@@ -23,16 +22,14 @@ function handleClick() {
 			<SparklingHighlight color="secondary">Front End Developer!</SparklingHighlight>
 		</h2>
 		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum velit voluptatibus commodi
-			autem provident quam labore, libero beatae praesentium voluptate?
+			Bringing Designs to Life <span class="secondary">&</span><br>
+			Probably playing <Tooltip {tip}><a href="https://steamcommunity.com/id/Kahram/" target="_blank">games</a></Tooltip> or petting my cats.
 		</p>
 		<div class="socials">
 			<span>Socials:</span>
 			<Socials />
 		</div>
-
 		<DiscoverButton side on:click={handleClick} on:keypress={handleClick}>Discover my work ↓</DiscoverButton>
-
 	</div>
 	<HeroImage />
 </section>
@@ -47,32 +44,7 @@ function handleClick() {
 		grid-template-columns: 1fr 1fr;
 		align-items: center;
 		justify-content: space-between;
-		padding-bottom: 50px;
-
-		h1 {
-			@include for-phone-only {
-				text-align: center;
-			}
-		}
-		
-		.intro {
-			font-weight: 500;
-			font-size: 1.4rem;
-			width: min(100%, 440px);
-			display: flex;
-			flex-direction: column;
-
-			.left {
-				text-align: left;
-			}
-			.right {
-				text-align: right;
-			}
-
-			@include for-phone-only {
-				display: none;
-			}
-		}
+		padding-bottom: 30px;
 
 		@include for-phone-only {
 			grid-template-columns: 1fr;
@@ -85,7 +57,14 @@ function handleClick() {
 		.info {
 			display: flex;
 			flex-direction: column;
-			gap: 20px;
+			gap: 15px;
+
+			h1 {
+				@include for-phone-only {
+					text-align: left;
+				}
+			}
+			
 			h2 {
 				@include for-phone-only {
 					text-align: center;
@@ -93,9 +72,15 @@ function handleClick() {
 			}
 
 			p {
+				color: var(--color--text);
 				@include for-phone-only {
 					text-align: justify;
 				}
+			}
+
+			.secondary {
+				font-weight: 900;
+				color: var(--color--secondary)
 			}
 
 			@include for-phone-only {

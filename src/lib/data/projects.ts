@@ -1,43 +1,66 @@
-import type { Feature } from "$lib/utils/types";
+import type { Project } from "$lib/utils/types";
 
 export default [ 
   {
-    name: 'Markdown Support',
+    name: 'PaulHealth & Blog',
     description:
-      'Blog posts are written in Markdown, a simple and nearly-universal format. This means you can bring over your posts from other platforms, and easily export to another if you want to.',
-    image: 'images/features/markdown.jpg',
-    tags: [{ label: 'Powered by MDsveX' }]
+      'Sveltekit 1.0 using Contentful as a headless CMS. Each component is configurable, the layout organized, and all contact entries are managed and sent to Contentful. Deployed using GCP.',
+    image: 'images/projects/paulHealth.png',
+    tags: [
+      { label: 'Sveltekit' }, 
+      { label: 'Contentful' }, 
+      { label: 'GCP', color: 'secondary' }
+    ]
   }, 
   {
-    name: 'Themeable',
+    name: 'Jumpcloud Signup & Onboarding',
     description:
-      'You can easily theme the entire website by changing just a few colors in the _themes.scss file.',
-    image: 'images/features/themeable.jpg',
-    tags: [{ label: 'Primary Color' }, { label: 'Secondary Color', color: 'secondary' }]
+      'Part of the growth team, I focused on the signup design and onboarding processes when first signing up for a Jumpcloud accout.',
+    image: 'images/projects/Jumpcloud.png',
+    tags: [
+      { label: 'Vue2' }, 
+      { label: 'Grid | Flexbox' }, 
+      { label: 'Node' },
+      { label: 'Cypress | Jest' }, 
+      { label: 'AWS', color: 'secondary' }
+    ]
   }, 
   {
-    name: 'Extensible',
+    name: 'Multiplying Good',
     description:
-      'Components are built to be reused, and you can build new pages and layouts without much CSS knowledge. You can see all components in Histoire by running "npm run story:dev"',
-    image: 'images/features/extensible.jpg',
+      'Built entire Front End for Multiplying Good\'s visual refresh. The site is built with Pimcore as a headless CMS.',
+    image: 'images/projects/MultiplyingGood.png',
+    tags: [
+      { label: 'HTML5' }, 
+      { label: 'Grid | Flexbox' },
+      { label: 'jQuery' }, 
+      { label: 'PHP' }, 
+      { label: 'Pimcore', color: 'secondary' }
+    ]
   }, 
   {
-    name: 'Well Optimized',
+    name: 'Politico Pro',
     description:
-      'Images are automatically optimized and lazy loaded, to ensure the website loads as fast as possible regardless of connection speed.',
-    image: 'images/features/optimized.jpg',
-    tags: [{ label: 'Powered by Image Transmutation' }]
-  }, 
-  {
-    name: 'Light and Dark Modes',
-    description:
-      'This template was built with dark mode in mind. It can swap between themes automatically (based on system settings) or manually. Both themes can be tweaked in the _themes.scss file.',
-    image: 'images/features/light-dark.jpg',
+      'Turned PoliticoPro into a WCAG AAA Compliant site using the existing codebase. This was a huge project that required a lot of attention to detail.',
+    image: 'images/projects/PoliticoPro.png',
+    tags: [
+      { label: 'A11Y' },
+      { label: 'WAVE' },
+      { label: 'Lighthouse' },
+      { label: 'JAWS' },
+    ]
   },
   {
-    name: 'Open Source',
+    name: 'Grafik',
     description:
-      'All code is open source, which means you can copy and modify it to your heart\'s content. All I ask is that you make your code open too so that knowledge can be passed on.',
-    image: 'images/features/open-source.jpg'
+      'Full rebuild of the corporate site for Grafik Digital. The site was built with WordPress, is fully responsive, and included a custom blog.',
+    image: 'images/projects/Grafik.png',
+    tags: [
+      { label: 'WordPress' },
+      { label: 'PHP' },
+      { label: 'jQuery' },
+      { label: 'Elementor' },
+      { label: 'A11Y' },
+    ]
   },
-] as Feature[];
+] as Project[];
