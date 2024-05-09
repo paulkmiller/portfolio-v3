@@ -61,7 +61,7 @@
 		justify-content: space-between;
 		width: 100%;
 		font-size: 1.2rem;
-		font-family: var(--font--title);
+		font-family: var(--font--mono);
 		font-weight: 700;
 	}
 

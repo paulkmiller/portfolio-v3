@@ -6,7 +6,7 @@ date: 2023-04-22T21:55:15.361Z
 excerpt: How to manage existing blog posts and create new ones
 tags:
   - Documentation
-hidden: true
+hidden: false
 ---
 
 <script>

@@ -42,8 +42,9 @@
 
 <style lang="scss">
 	.card {
-		background: var(--color--card-background);
+		background: var(--color--discover-neutral-two);
 		box-shadow: var(--card-shadow);
+		// border: 1px solid var(--color--discover-neutral-four);
 		color: var(--color--text);
 		border-radius: 10px;
 		transition: all 0.4s ease;

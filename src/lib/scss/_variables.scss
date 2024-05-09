@@ -10,6 +10,7 @@
 	--ease-out-1: cubic-bezier(0, 0, 0.75, 1);
 	--ease-out-3: cubic-bezier(0, 0, 0.3, 1);
 	--ease-elastic-4: cubic-bezier(0.5, 1.5, 0.75, 1.25);
+	--bezier-one: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
 	--bg-color: hsl(249deg, 22%, 12%);
 	--neutral-one: #21202e;
@@ -17,5 +18,4 @@
 	--neutral-three: #26233a;
 	--neutral-four: hsl(267deg, 57%, 78%);
 	--neutral-five: #1f1d2e;
-
 }

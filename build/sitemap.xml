@@ -5,12 +5,21 @@
     <loc>https://www.paulkmiller.com/404</loc>
   </url>
   <url>
+    <loc>https://www.paulkmiller.com/blog-posts</loc>
+  </url>
+  <url>
     <loc>https://www.paulkmiller.com/blog</loc>
+  </url>
+  <url>
+    <loc>https://www.paulkmiller.com/customization</loc>
   </url>
   <url>
     <loc>https://www.paulkmiller.com/</loc>
   </url>
   <url>
     <loc>https://www.paulkmiller.com/moving-to-colorado</loc>
+  </url>
+  <url>
+    <loc>https://www.paulkmiller.com/project-structure</loc>
   </url>
 </urlset>

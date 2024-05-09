@@ -41,7 +41,7 @@
 			.credits {
 				font-weight: 400;
 				font-size: 90%;
-				color: var(--color--text-shade);
+				color: var(--color--white);
 			}
 
 			.socials {

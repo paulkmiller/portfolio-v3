@@ -12,7 +12,7 @@
 	description="Here is some of my past work"
 >
 	<div class="projects-container">
-		<div class="three-group-grid">
+		<div class="two-group-grid">
 			{#each projects as project}
 				<ProjectCard
 					name={project.name}
@@ -35,10 +35,21 @@
 		grid-gap: 20px;
 	}
 
+	.two-group-grid {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 20px;
+
+		@include for-phone-only {
+			grid-template-columns: 1fr;
+		}
+	}
+
 	.three-group-grid {
 		width: 100%;
 		display: grid;
-		grid-template-columns: 2fr 1fr;
+		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 20px;
 
 		@media (max-width: 1085px) {
@@ -51,23 +62,23 @@
 
 		// Select every 3 elements, starting from position 2
 		// And make it take up 2 rows
-		@media (min-width: 1086px) {
-			> :global(:nth-child(3n + 2)) {
-				grid-row: span 2;
-			}
-		}
+		// @media (min-width: 1086px) {
+		// 	> :global(:nth-child(3n + 2)) {
+		// 		grid-row: span 2;
+		// 	}
+		// }
 
 		// Select every 3 elements, starting from position 1
 		// And make it take up 2 columns
-		> :global(:nth-child(3n + 1)) {
-			@media (max-width: 1085px) {
-				grid-column: span 2;
-			}
+		// > :global(:nth-child(3n + 1)) {
+		// 	@media (max-width: 1085px) {
+		// 		grid-column: span 2;
+		// 	}
 
-			@include for-tablet-portrait-down {
-				grid-template-columns: 1fr;
-				grid-column: unset;
-			}
-		}
+		// 	@include for-tablet-portrait-down {
+		// 		grid-template-columns: 1fr;
+		// 		grid-column: unset;
+		// 	}
+		// }
 	}
 </style>

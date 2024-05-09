@@ -511,7 +511,7 @@
     "src": "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-latin-ext-400-normal.woff2"
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/entry/start.b5f9b20b.js",
+    "file": "_app/immutable/entry/start.3dc3f0cf.js",
     "imports": [
       "_index.b3dbe48f.js",
       "_index.1bd5ef1d.js"

@@ -6,7 +6,7 @@ excerpt: How code and structure are organized.
 coverImage: /images/posts/project-structure.jpg
 tags:
   - Documentation
-hidden: true
+hidden: false
 ---
 
 <script>

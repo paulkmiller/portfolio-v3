@@ -6,7 +6,7 @@ const metadata = {
   "excerpt": "How to customize what you're seeing here and make it your own.",
   "coverImage": "/images/posts/customization.jpg",
   "tags": ["Documentation"],
-  "hidden": true
+  "hidden": false
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<p>In general, content can be modified by editing the <strong>organisms</strong> and the pages themselves. Below is a list of the most common changes that you may want to make.</p>

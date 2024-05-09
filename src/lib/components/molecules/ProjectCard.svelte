@@ -16,9 +16,9 @@
 	</div>
 	<div class="content" slot="content">
 		<div class="title">
-			<span>{@html name}</span>
+			<span>{name}</span>
 		</div>
-		<p>{description}</p>
+		<h6>{description}</h6>
 	</div>
 	<div class="footer" slot="footer">
 		{#if tags && tags.length > 0}
