@@ -5,13 +5,13 @@ coverImage: /images/posts/colorado.jpg
 excerpt: "Turns out, moving across the country in the dead of night, is not the best plan."
 date: 2024-05-08T21:07:09.628Z
 updated: 2024-05-08T21:07:09.628Z
-hidden: false
 tags: 
   - Colorado
   - Moving
   - Terror
   - Super Great Decisions
 type: default
+hidden: true
 ---
 
 <script>

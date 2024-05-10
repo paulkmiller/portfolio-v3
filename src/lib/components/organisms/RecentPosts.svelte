@@ -10,7 +10,7 @@
 <ContentSection
 	id="recent-posts"
 	title="Blog posts"
-	description="This section shows the 4 most recent blog posts. Check them out for tips on how to get started!"
+	description="I write about things that intrigue me, life events, and personal thoughts. Want to learn more about me? This is the spot!"
 	align="left"
 >
 	<div slot="button">
