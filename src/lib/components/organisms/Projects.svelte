@@ -12,8 +12,7 @@
 	title="<span style='color: #ff723f'>code</span>://work"
 	description="Here is some of my past work"
 >
-	<ParticlesBackground >
-	</ParticlesBackground >
+	<ParticlesBackground />
 	<div class="projects-container">
 		<div class="two-group-grid">
 			{#each projects as project}
