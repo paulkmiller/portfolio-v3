@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import Header from '$lib/components/organisms/Header.svelte';
 	import Footer from '$lib/components/organisms/Footer.svelte';
 	import Tag from '$lib/components/atoms/Tag.svelte';
@@ -14,35 +13,6 @@
 	$: ({ post } = data);
 
 	let metaKeywords = keywords;
-
-	let loading = true;
-	let playSFX: (() => void) | undefined;
-
-	onMount(() => {
-		// need to create our own audio context as the default Audio() pauses any music playing
-		let buffer: AudioBuffer;
-		const audioCtx = new window.AudioContext();
-		const request = new XMLHttpRequest();
-		request.open('GET', 'sounds/click.ogg', true);
-		request.responseType = 'arraybuffer';
-		request.onload = function () {
-			const audioData: ArrayBuffer = request.response;
-			audioCtx.decodeAudioData(audioData, function (decodedBuffer) {
-				buffer = decodedBuffer;
-				playSFX = () => {
-					const source = audioCtx.createBufferSource();
-					source.buffer = buffer;
-					source.connect(audioCtx.destination);
-					source.start(0);
-				};
-			});
-		};
-		request.send();
-
-		if (document.readyState === 'complete') {
-			loading = false;
-		}
-	});
 
 	$: {
 		if (post?.tags?.length) {

@@ -5,8 +5,8 @@ export default [
     name: 'PaulHealth & Blog',
     description:
       'Sveltekit 1.0 using Contentful as a headless CMS. Each component is configurable, the layout organized, and all contact entries are managed by and sent to Contentful. Deployed using GCP. Entire frontend is custom.',
-    // link: 'https://paulhealth.ue.r.appspot.com/home/',
-       image: 'images/projects/paulHealth.png',
+    link: 'https://paulhealth.ue.r.appspot.com/home/',
+    image: 'images/projects/paulHealth.png',
     tags: [
       { label: 'Sveltekit' }, 
       { label: 'Contentful' },
@@ -18,7 +18,7 @@ export default [
     name: 'Jumpcloud Signup & Onboarding',
     description:
       'Redesign & rebuild of signup + onboarding workflows for new accounts, enhancing user experience and conversion rates. Implemented a streamlined & intuitive interface using modern UX principles and A/B testing to optimize user engagement from initial point of contact.',
-    // link: 'https://console.jumpcloud.com/signup',
+    link: 'https://console.jumpcloud.com/signup',
     image: 'images/projects/Jumpcloud.png',
     tags: [
       { label: 'Vue2' }, 
@@ -32,8 +32,8 @@ export default [
     name: 'Multiplying Good',
     description:
       'Developed complete front end for Multiplying Good\'s visual overhaul, utilizing Pimcore as a headless CMS to deliver a dynamic, API-driven user experience. Implemented component-driven design before it was cool.',
-    // link: 'https://www.multiplyinggood.org/',
-       image: 'images/projects/MultiplyingGood.png',
+    link: 'https://www.multiplyinggood.org/',
+    image: 'images/projects/MultiplyingGood.png',
     tags: [
       { label: 'HTML5' }, 
       { label: 'Grid | Flexbox' },
@@ -46,8 +46,8 @@ export default [
     name: 'Politico Pro',
     description:
       'Enhanced PoliticoPro\'s WordPress theme to achieve WCAG 2.1 AAA compliance by integrating custom accessibility-focused plugins and modifying existing codebase to align with best practices for accessibility. This involved a detailed audit and iterative improvements.',
-    // link: 'https://www.politicopro.com/',
-       image: 'images/projects/PoliticoPro.png',
+    link: 'https://www.politicopro.com/',
+    image: 'images/projects/PoliticoPro.png',
     tags: [
       { label: 'A11Y' },
       { label: 'WAVE' },
@@ -60,8 +60,8 @@ export default [
     name: 'Grafik',
     description:
       'Full rebuild of the corporate site for Grafik Digital. The site was built with WordPress, is fully responsive, and included a custom blog.',
-    // link: 'https://grafik.agency/',
-       image: 'images/projects/Grafik.png',
+    link: 'https://grafik.agency/',
+    image: 'images/projects/Grafik.png',
     tags: [
       { label: 'PHP' },
       { label: 'jQuery' },

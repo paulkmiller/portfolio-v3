@@ -1,12 +1,7 @@
 <script>
-	import SparklingHighlight from '$lib/components/molecules/SparklingHighlight.svelte';
-	import Socials from '$lib/components/molecules/Socials.svelte';
-	import Image from '$lib/components/atoms/Image.svelte';
-	import Tooltip from '$lib/components/atoms/Tooltip.svelte';
 	import Sparkles from '$lib/components/atoms/Sparkles.svelte';
 	import Button from '$lib/components/atoms/Button.svelte';
 	import EmailIcon from '$lib/icons/socials/email.svelte';
-	import FeaturesIcon from '$lib/icons/features.svelte';
 
 </script>
 
@@ -59,31 +54,12 @@
 			gap: 20px;
 		}
 
-		.socials {
-			display: flex;
-			align-items: center;
-			gap: 15px;
-
-			@include for-phone-only {
-				justify-content: center;
-				margin-bottom: 10px;
-				span {
-					display: none;
-				}
-			}
-		}
-
 		.ctas {
 			display: flex;
 			flex-wrap: wrap;
 			align-items: center;
 			gap: 10px;
 			width: 100%;
-		}
-
-		.image {
-			width: 220px;
-			height: 220px;
 		}
 	}
 </style>

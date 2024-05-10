@@ -11,7 +11,7 @@
 	</div>
 	<div class="content">
 		<div class="credits">
-			Site powered by several 🐹's and ☕
+			Site powered by <a href="https://kit.svelte.dev/">Svelte</a>, <a href="https://iconoir.com/">Iconoir</a> and ☕
 		</div>
 		<div class="socials">
 			<Socials />
@@ -33,15 +33,19 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			justify-content: center;
-			gap: 15px;
+			justify-content: flex-start;
+			gap: 10px;
 			font-weight: 600;
 			text-align: center;
+
+			background-image: url(https://i.imgur.com/QQNxJfu.png);
+    	background-size: 27%;
 
 			.credits {
 				font-weight: 400;
 				font-size: 90%;
 				color: var(--color--white);
+				margin-top: -10px;
 			}
 
 			.socials {

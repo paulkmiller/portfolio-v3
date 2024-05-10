@@ -77,15 +77,15 @@ const Footer_wave = create_ssr_component(($$result, $$props, $$bindings, slots) 
 });
 const Footer_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "footer.svelte-1m94jhe.svelte-1m94jhe{height:340px;width:100%;background:linear-gradient(60deg, var(--color--waves-start) 0%, var(--color--waves-end) 100%);display:grid;grid-template-rows:120px 1fr}footer.svelte-1m94jhe .content.svelte-1m94jhe{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:15px;font-weight:600;text-align:center}footer.svelte-1m94jhe .content .credits.svelte-1m94jhe{font-weight:400;font-size:90%;color:var(--color--text-shade)}footer.svelte-1m94jhe .content .socials.svelte-1m94jhe{display:flex;align-items:center;gap:20px}",
+  code: "footer.svelte-7uyc3h.svelte-7uyc3h{height:340px;width:100%;background:linear-gradient(60deg, var(--color--waves-start) 0%, var(--color--waves-end) 100%);display:grid;grid-template-rows:120px 1fr}footer.svelte-7uyc3h .content.svelte-7uyc3h{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:10px;font-weight:600;text-align:center;background-image:url(https://i.imgur.com/QQNxJfu.png);background-size:27%}footer.svelte-7uyc3h .content .credits.svelte-7uyc3h{font-weight:400;font-size:90%;color:var(--color--white);margin-top:-10px}footer.svelte-7uyc3h .content .socials.svelte-7uyc3h{display:flex;align-items:center;gap:20px}footer.svelte-7uyc3h a.svelte-7uyc3h:hover{filter:drop-shadow(0px 0px 3px var(--color--primary))}",
   map: null
 };
 const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<footer class="svelte-1m94jhe"><div class="wave">${validate_component(Footer_wave, "FooterWave").$$render($$result, {}, {}, {})}</div>
-	<div class="content svelte-1m94jhe"><div class="credits svelte-1m94jhe">Site powered by several 🐹&#39;s and ☕
+  return `<footer class="svelte-7uyc3h"><div class="wave">${validate_component(Footer_wave, "FooterWave").$$render($$result, {}, {}, {})}</div>
+	<div class="content svelte-7uyc3h"><div class="credits svelte-7uyc3h">Site powered by <a href="https://kit.svelte.dev/" class="svelte-7uyc3h">Svelte</a>, <a href="https://iconoir.com/" class="svelte-7uyc3h">Iconoir</a> and ☕
 		</div>
-		<div class="socials svelte-1m94jhe">${validate_component(Socials, "Socials").$$render($$result, {}, {}, {})}
+		<div class="socials svelte-7uyc3h">${validate_component(Socials, "Socials").$$render($$result, {}, {}, {})}
 			${validate_component(RssLink, "RssLink").$$render($$result, {}, {}, {})}
 			${validate_component(ThemeToggle, "ThemeToggle").$$render($$result, {}, {}, {})}</div></div>
 </footer>`;

@@ -12,7 +12,7 @@
 			<div class="text">
 				{#if title}
 					<h2>
-						{title}
+						{@html title}
 					</h2>
 				{/if}
 				{#if description}
@@ -66,6 +66,7 @@
 
 			display: grid;
 			place-items: center;
+
 		}
 
 		@include for-tablet-landscape-up {

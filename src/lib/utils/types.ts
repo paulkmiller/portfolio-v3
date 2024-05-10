@@ -20,6 +20,7 @@ export type SocialLink = {
 export type Project = {
   name: string,
   description: string,
+  link: string,
   image: string,
   tags: TagType[]
 }

@@ -11,7 +11,7 @@
 		el.scrollIntoView(true);
 	}
 
-	$: tip = 'Almost certainly getting my butt kicked'
+	$: tip = 'Probably getting my butt kicked 🙃'
 </script>
 
 <section id="hero">

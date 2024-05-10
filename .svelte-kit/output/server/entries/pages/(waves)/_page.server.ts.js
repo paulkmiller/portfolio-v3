@@ -1,18 +1,21 @@
 import { f as filteredPosts } from "../../../chunks/index3.js";
 const projects = [
   {
-    name: '<a href="https://paulhealth.ue.r.appspot.com/home/" target="_blank">PaulHealth & Blog</a>',
-    description: "Sveltekit 1.0 using Contentful as a headless CMS. Each component is configurable, the layout organized, and all contact entries are managed by and sent to Contentful. Deployed using GCP.",
+    name: "PaulHealth & Blog",
+    description: "Sveltekit 1.0 using Contentful as a headless CMS. Each component is configurable, the layout organized, and all contact entries are managed by and sent to Contentful. Deployed using GCP. Entire frontend is custom.",
+    link: "https://paulhealth.ue.r.appspot.com/home/",
     image: "images/projects/paulHealth.png",
     tags: [
       { label: "Sveltekit" },
       { label: "Contentful" },
+      { label: "Figma" },
       { label: "GCP", color: "secondary" }
     ]
   },
   {
-    name: '<a href="https://console.jumpcloud.com/signup" target="_blank">Jumpcloud Signup & Onboarding</a>',
-    description: "Part of the growth team, I focused on the signup design and onboarding processes when first signing up for a Jumpcloud accout.",
+    name: "Jumpcloud Signup & Onboarding",
+    description: "Redesign & rebuild of signup + onboarding workflows for new accounts, enhancing user experience and conversion rates. Implemented a streamlined & intuitive interface using modern UX principles and A/B testing to optimize user engagement from initial point of contact.",
+    link: "https://console.jumpcloud.com/signup",
     image: "images/projects/Jumpcloud.png",
     tags: [
       { label: "Vue2" },
@@ -23,8 +26,9 @@ const projects = [
     ]
   },
   {
-    name: '<a href="https://www.multiplyinggood.org/" target="_blank">Multiplying Good</a>',
-    description: "Built entire Front End for Multiplying Good's visual refresh. The site is built with Pimcore as a headless CMS.",
+    name: "Multiplying Good",
+    description: "Developed complete front end for Multiplying Good's visual overhaul, utilizing Pimcore as a headless CMS to deliver a dynamic, API-driven user experience. Implemented component-driven design before it was cool.",
+    link: "https://www.multiplyinggood.org/",
     image: "images/projects/MultiplyingGood.png",
     tags: [
       { label: "HTML5" },
@@ -35,26 +39,30 @@ const projects = [
     ]
   },
   {
-    name: '<a href="https://www.politicopro.com/" target="_blank">Politico Pro</a>',
-    description: "Turned PoliticoPro into a WCAG AAA Compliant site using the existing codebase. This was a huge project that required a lot of attention to detail.",
+    name: "Politico Pro",
+    description: "Enhanced PoliticoPro's WordPress theme to achieve WCAG 2.1 AAA compliance by integrating custom accessibility-focused plugins and modifying existing codebase to align with best practices for accessibility. This involved a detailed audit and iterative improvements.",
+    link: "https://www.politicopro.com/",
     image: "images/projects/PoliticoPro.png",
     tags: [
       { label: "A11Y" },
       { label: "WAVE" },
       { label: "Lighthouse" },
-      { label: "JAWS" }
+      { label: "JAWS" },
+      { label: "Wordpress", color: "secondary" }
     ]
   },
   {
-    name: '<a href="https://grafik.agency/" target="_blank">Grafik</a>',
+    name: "Grafik",
     description: "Full rebuild of the corporate site for Grafik Digital. The site was built with WordPress, is fully responsive, and included a custom blog.",
+    link: "https://grafik.agency/",
     image: "images/projects/Grafik.png",
     tags: [
-      { label: "WordPress" },
       { label: "PHP" },
       { label: "jQuery" },
+      { label: "SCSS" },
       { label: "Elementor" },
-      { label: "A11Y" }
+      { label: "A11Y" },
+      { label: "Wordpress", color: "secondary" }
     ]
   }
 ];

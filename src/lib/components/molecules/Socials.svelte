@@ -9,7 +9,7 @@
 
 <div class="socials">
 	<a
-		href="#"
+		href="https://mastodon.social/@PaulMiller"
 		target="_blank"
 		rel="me noreferrer"
 		title="Say Hi on Mastodon"
@@ -17,7 +17,7 @@
 		<MastodonIcon />
 	</a>
 	<a
-		href="#"
+		href="https://github.com/paulkmiller"
 		target="_blank"
 		rel="noopener noreferrer"
 		title="See my GitHub profile"
@@ -25,7 +25,7 @@
 		<GitHubIcon />
 	</a>
 	<a
-		href="#"
+		href="https://www.linkedin.com/in/paulmiller88/"
 		target="_blank"
 		rel="noopener noreferrer"
 		title="Connect on LinkedIn"
@@ -33,7 +33,7 @@
 		<LinkedInIcon />
 	</a>
 	<a
-		href="#"
+		href="mailto:paulkerrymiller@gmail.com"
 		target="_blank"
 		rel="noopener noreferrer"
 		title="Send an email"
