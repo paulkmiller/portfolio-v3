@@ -22,6 +22,8 @@
 </footer>
 
 <style lang="scss">
+	@import '$lib/scss/breakpoints.scss';
+	
 	footer {
 		height: 340px;
 		width: 100%;
@@ -40,6 +42,10 @@
 
 			background-image: url(https://i.imgur.com/QQNxJfu.png);
     	background-size: 27%;
+
+			@include for-phone-only {
+				background-size: auto;
+			}
 
 			.credits {
 				font-weight: 400;
