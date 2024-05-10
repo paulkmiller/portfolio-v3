@@ -14,7 +14,7 @@
     "story:build": "histoire build",
     "story:preview": "histoire preview",
     "vercel-sitemap": "svelte-sitemap --out-dir .vercel/output/static --domain https://www.paulkmiller.com/",
-    "vercel-optimize-images": "image-transmutation --run --sourceFolder '.vercel/output/static/images' --targetFolder '.vercel/output/static/images' --inputFormats 'jpg' --inputFormats 'jpeg' --inputFormats 'png' --outputFormats 'png' --outputFormats 'webp' --outputFormats 'avif'"
+    "vercel-build": "npm run build && npm run vercel-sitemap"
   },
   "devDependencies": {
     "@histoire/plugin-svelte": "^0.16.1",
