@@ -1,7 +1,7 @@
 ---
 title: Moving To Colorado
 slug: moving-to-colorado
-coverImage: /images/posts/colorado.jpg
+coverImage: /images/posts/colorado.webp
 excerpt: "Turns out, moving across the country in the dead of night, is not the best plan."
 date: 2024-05-08T21:07:09.628Z
 updated: 2024-05-08T21:07:09.628Z

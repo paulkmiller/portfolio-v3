@@ -1,9 +1,8 @@
 import { c as create_ssr_component, v as validate_component, e as each, a as add_attribute, b as escape } from "../../../chunks/index2.js";
 import { H as Header, F as Footer } from "../../../chunks/Footer.js";
-import { C as ContentSection, B as BlogPostCard, T as Tag } from "../../../chunks/ContentSection.js";
+import { C as ContentSection, B as BlogPostCard, T as Tag, I as Image } from "../../../chunks/ContentSection.js";
 import dateformat from "dateformat";
 import { k as keywords, s as siteBaseUrl, t as title } from "../../../chunks/meta.js";
-import { I as Image } from "../../../chunks/Image.js";
 const RelatedPosts_svelte_svelte_type_style_lang = "";
 const css$1 = {
   code: ".simple-grid.svelte-ypk0wh{width:100%;display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:20px}@media(max-width: 1070px){.simple-grid.svelte-ypk0wh{grid-template-columns:1fr 1fr}}@media(max-width: 900px){.simple-grid.svelte-ypk0wh{grid-template-columns:1fr}}",

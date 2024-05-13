@@ -9,21 +9,17 @@ export const nodes = [
 	() => import('./nodes/5'),
 	() => import('./nodes/6'),
 	() => import('./nodes/7'),
-	() => import('./nodes/8'),
-	() => import('./nodes/9'),
-	() => import('./nodes/10')
+	() => import('./nodes/8')
 ];
 
 export const server_loads = [2];
 
 export const dictionary = {
-		"/(waves)": [~8,[3]],
-		"/(waves)/404": [9,[3]],
-		"/(blog-article)/blog-posts": [4,[2]],
-		"/(waves)/blog": [~10,[3]],
-		"/(blog-article)/customization": [5,[2]],
-		"/(blog-article)/moving-to-colorado": [6,[2]],
-		"/(blog-article)/project-structure": [7,[2]]
+		"/(waves)": [~6,[3]],
+		"/(waves)/404": [7,[3]],
+		"/(waves)/blog": [~8,[3]],
+		"/(blog-article)/moving-to-colorado": [4,[2]],
+		"/(blog-article)/steamdeck-modded-fallout4": [5,[2]]
 	};
 
 export const hooks = {

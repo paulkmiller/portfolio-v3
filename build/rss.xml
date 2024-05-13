@@ -28,7 +28,7 @@
           <description>Turns out, moving across the country in the dead of night, is not the best plan.</description>
           <link>https://paulkmiller.com/moving-to-colorado</link>
           <pubDate>Wed, 08 May 2024 14:07:09 -0700</pubDate>
-          <category>Colorado</category><category>Virginia</category><category>Moving</category><category>Super Great Decisions</category>
+          <category>Colorado</category><category>Virginia</category><category>Moving</category><category>Deliverance</category>
           <content:encoded><![CDATA[
             <div style="margin: 50px 0; font-style: italic;">
               If anything looks wrong, 
@@ -61,8 +61,49 @@
 <p>Despite this, and despite our accomplishments, we found ourselves missing Virginia and the DMV area. We especially felt bad for our cats, who went from living as indoor/outdoor cats in a part of VA where they had no natural predators and could roam safely outside, with my trust that they’d come home when called, something that I trained them to do over the first 6 months of their lives with us. They were now confined to an apartment, less than 1000 square feet in size, with just me to keep them company as a remote worker. I also began to quickly miss the cultural diversity afforded to us by being so close to Washington D.C. and having immediate access to the truly world-class Metro in the DMV. But it was done and we had sunk too much money to have regrets, so we settled in, and spent 2 wonderful years in Colorado before it was off to the next adventure as Kristen transitioned into being a travelling Nurse. Now we’re in Arizona and soon after, we’ll be in Oregon. Who knows what’s next, but one thing is certain: I’m so glad we moved. If we hadn’t, we’d still likely be stuck in that black hole of a state, and I wouldn’t have conquered my first 14er, or learned how to fall on my ass 23 different ways while learning to ski. </p>
 <p>Looking back on our decision to move to Denver, I realize now that it was about more than just escaping the b”lack hole of the East Coast”. It was about pushing ourselves out of our comfort zones, embracing new experiences, and discovering what we were truly capable of. The move tested our relationship, our resilience, and our sense of adventure, but in the end, it brought us closer together and taught us valuable lessons about ourselves and each other. To anyone considering a similar life change, I would say this: Don’t let fear hold you back. Embrace the unknown, take risks, and trust in your ability to adapt and grow. You never know what incredible experiences and opportunities await you on the other side.</p>
           ]]></content:encoded>
-          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://paulkmiller.com//images/posts/colorado.jpg"/>
-          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://paulkmiller.com//images/posts/colorado.jpg"/>          
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://paulkmiller.com//images/posts/colorado.webp"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://paulkmiller.com//images/posts/colorado.webp"/>          
+        </item>
+      
+        <item>
+          <guid>https://paulkmiller.com/steamdeck-modded-fallout4</guid>
+          <title>Installing Fallout 4 A StoryWealth Collection on Steam Deck</title>
+          <description>How to add the most popular collection on Nexusmods for Fallout 4 to your Steamdeck</description>
+          <link>https://paulkmiller.com/steamdeck-modded-fallout4</link>
+          <pubDate>Sat, 22 Apr 2023 14:55:27 -0700</pubDate>
+          <category>Documentation</category><category>Steam Deck</category><category>Fallout 4</category><category>A StoryWealth Collection</category><category>NexusMods</category>
+          <content:encoded><![CDATA[
+            <div style="margin: 50px 0; font-style: italic;">
+              If anything looks wrong, 
+              <strong>
+                <a href="https://paulkmiller.com/steamdeck-modded-fallout4">
+                  read on the site!
+                </a>
+              </strong>
+            </div>
+
+            <p>Welcome, fellow Wasteland Hombres! This guide will walk you through the process of installing the most endorsed Collection for Fallout 4 on Nexusmods: Fallout 4: A StoryWealth. Let’s get started!</p>
+<h2 id="prerequisites"><a class="heading-link" title="Permalink" aria-hidden="true" href="#prerequisites"><span>#</span></a>Prerequisites</h2>
+<p>Before we begin, please note that on April 25th, a big next-gen Fallout 4 Update will be released. To avoid updates ruining your mod collections, please refer to <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" rel="nofollow">this video</a> on how to disable Steam updates for specific titles.</p>
+<ol><li><p>Install a clean copy of Fallout 4 without the HD pack DLC, and run it once to configure all folders and ini files. You don’t need to start a new game at this point.</p></li>
+<li><p>Switch to desktop mode on your Steam Deck.</p></li>
+<li><p>Open a browser and navigate to <a href="https://github.com/pikdum/steam-deck" rel="nofollow">https://github.com/pikdum/steam-deck</a>.</p></li>
+<li><p>Follow the instructions to install Pikdum’s Steamdeck tools. Finish by installing, running, and configuring Vortex as explained on the web page. Use the desktop shortcuts instead of the command line for easier setup.</p></li></ol>
+<h2 id="installing-the-collection"><a class="heading-link" title="Permalink" aria-hidden="true" href="#installing-the-collection"><span>#</span></a>Installing the Collection</h2>
+<ol><li><p>Launch Vortex and follow the guide from the Nexusmods page.</p></li>
+<li><p>After completing step 7 of the mod installation, go to the mods tab and disable “Interior NavCut Fix” (which breaks loading saved games) and “MCM Booster”. Additionally, download and install the “no multi-threaded” version of “Interior NavCut Fix” for optimal performance on the Steam Deck.</p></li>
+<li><p>Continue following the guide until Step 11.</p></li></ol>
+<h2 id="configuring-bethini"><a class="heading-link" title="Permalink" aria-hidden="true" href="#configuring-bethini"><span>#</span></a>Configuring BethINI</h2>
+<ol><li><p>At Step 11, you’ll need to install Protontricks from the Discover store to apply BethINI edits.</p></li>
+<li><p>Once Protontricks is installed, launch BethINI.exe directly. A Protontricks prompt will appear, asking which prefix you want to run BethINI with. Choose Fallout4.</p></li>
+<li><p>Use BethINI as directed in the Collection install guide.</p></li></ol>
+<h2 id="finalizing-the-setup"><a class="heading-link" title="Permalink" aria-hidden="true" href="#finalizing-the-setup"><span>#</span></a>Finalizing the Setup</h2>
+<ol><li><p>Close Vortex and run the “Fallout 4 Post-Deploy” shortcut installed by Pikdum’s tools on your desktop. This will ensure that Steam launches F4SE correctly.</p></li>
+<li><p>If everything went smoothly, run Fallout 4 from Steam, either through the app or by running the “Return to Gaming Mode” shortcut and launching Fallout 4 from the normal Steam Deck interface.</p></li></ol>
+<p>Congratulations! You’re now ready to embark on your Fallout 4: A StoryWealth adventure on your Steam Deck. Have fun, fellow Steamdeck users!</p>
+          ]]></content:encoded>
+          <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://paulkmiller.com//images/posts/steamdeckfallout4.webp"/>
+          <media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="https://paulkmiller.com//images/posts/steamdeckfallout4.webp"/>          
         </item>
       
   </channel>

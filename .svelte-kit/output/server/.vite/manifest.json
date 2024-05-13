@@ -11,14 +11,6 @@
     "file": "_app/immutable/assets/Button.7dba5869.css",
     "src": "Button.css"
   },
-  "Callout.css": {
-    "file": "_app/immutable/assets/Callout.f5800320.css",
-    "src": "Callout.css"
-  },
-  "CodeBlock.css": {
-    "file": "_app/immutable/assets/CodeBlock.c482c875.css",
-    "src": "CodeBlock.css"
-  },
   "ContentSection.css": {
     "file": "_app/immutable/assets/ContentSection.86f945e6.css",
     "src": "ContentSection.css"
@@ -45,33 +37,15 @@
       "_regex.js"
     ]
   },
-  "_Callout.js": {
-    "css": [
-      "_app/immutable/assets/Callout.f5800320.css"
-    ],
-    "file": "chunks/Callout.js",
-    "imports": [
-      "_index2.js"
-    ]
-  },
-  "_CodeBlock.js": {
-    "css": [
-      "_app/immutable/assets/CodeBlock.c482c875.css"
-    ],
-    "file": "chunks/CodeBlock.js",
-    "imports": [
-      "_index2.js"
-    ]
-  },
   "_ContentSection.js": {
     "css": [
-      "_app/immutable/assets/ContentSection.86f945e6.css"
+      "_app/immutable/assets/ContentSection.86f945e6.css",
+      "_app/immutable/assets/Image.0954db74.css"
     ],
     "file": "chunks/ContentSection.js",
     "imports": [
       "_index2.js",
-      "_regex.js",
-      "_Image.js"
+      "_regex.js"
     ]
   },
   "_Footer.js": {
@@ -85,15 +59,6 @@
       "_index.js"
     ]
   },
-  "_Image.js": {
-    "css": [
-      "_app/immutable/assets/Image.0954db74.css"
-    ],
-    "file": "chunks/Image.js",
-    "imports": [
-      "_index2.js"
-    ]
-  },
   "_Socials.js": {
     "css": [
       "_app/immutable/assets/Socials.1c0e54d1.css"
@@ -104,36 +69,19 @@
     ]
   },
   "__page.js": {
+    "css": [
+      "_app/immutable/assets/_page.2ac225e0.css",
+      "_app/immutable/assets/Image.0954db74.css"
+    ],
     "file": "chunks/_page.js",
     "imports": [
-      "_index2.js",
-      "_Callout.js",
-      "_CodeBlock.js",
-      "_Image.js"
+      "_index2.js"
     ]
   },
   "__page2.js": {
     "file": "chunks/_page2.js",
     "imports": [
       "_index2.js"
-    ]
-  },
-  "__page3.js": {
-    "css": [
-      "_app/immutable/assets/Image.0954db74.css"
-    ],
-    "file": "chunks/_page3.js",
-    "imports": [
-      "_index2.js",
-      "_Callout.js",
-      "_CodeBlock.js"
-    ]
-  },
-  "__page4.js": {
-    "file": "chunks/_page4.js",
-    "imports": [
-      "_index2.js",
-      "_CodeBlock.js"
     ]
   },
   "_error.js": {
@@ -166,6 +114,10 @@
   "_meta.js": {
     "file": "chunks/meta.js"
   },
+  "_page.css": {
+    "file": "_app/immutable/assets/_page.2ac225e0.css",
+    "src": "_page.css"
+  },
   "_regex.js": {
     "file": "chunks/regex.js"
   },
@@ -173,9 +125,7 @@
     "file": "chunks/utils.js",
     "imports": [
       "__page.js",
-      "__page2.js",
-      "__page3.js",
-      "__page4.js"
+      "__page2.js"
     ]
   },
   "node_modules/@fontsource/inter/files/inter-all-400-normal.woff": {
@@ -368,32 +318,10 @@
       "_index2.js",
       "_Footer.js",
       "_ContentSection.js",
-      "_meta.js",
-      "_Image.js"
+      "_meta.js"
     ],
     "isEntry": true,
     "src": "src/routes/(blog-article)/+layout.svelte"
-  },
-  "src/routes/(blog-article)/blog-posts/+page.md": {
-    "file": "entries/pages/(blog-article)/blog-posts/_page.md.js",
-    "imports": [
-      "_index2.js",
-      "_Callout.js",
-      "_CodeBlock.js",
-      "_Image.js",
-      "__page.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/(blog-article)/blog-posts/+page.md"
-  },
-  "src/routes/(blog-article)/customization/+page.md": {
-    "file": "entries/pages/(blog-article)/customization/_page.md.js",
-    "imports": [
-      "_index2.js",
-      "__page2.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/(blog-article)/customization/+page.md"
   },
   "src/routes/(blog-article)/moving-to-colorado/+page.md": {
     "css": [
@@ -402,22 +330,19 @@
     "file": "entries/pages/(blog-article)/moving-to-colorado/_page.md.js",
     "imports": [
       "_index2.js",
-      "_Callout.js",
-      "_CodeBlock.js",
-      "__page3.js"
+      "__page.js"
     ],
     "isEntry": true,
     "src": "src/routes/(blog-article)/moving-to-colorado/+page.md"
   },
-  "src/routes/(blog-article)/project-structure/+page.md": {
-    "file": "entries/pages/(blog-article)/project-structure/_page.md.js",
+  "src/routes/(blog-article)/steamdeck-modded-fallout4/+page.md": {
+    "file": "entries/pages/(blog-article)/steamdeck-modded-fallout4/_page.md.js",
     "imports": [
       "_index2.js",
-      "_CodeBlock.js",
-      "__page4.js"
+      "__page2.js"
     ],
     "isEntry": true,
-    "src": "src/routes/(blog-article)/project-structure/+page.md"
+    "src": "src/routes/(blog-article)/steamdeck-modded-fallout4/+page.md"
   },
   "src/routes/(waves)/+layout.css": {
     "file": "_app/immutable/assets/_layout.4c4b0438.css",
@@ -457,8 +382,7 @@
       "_index2.js",
       "_Socials.js",
       "_Button.js",
-      "_ContentSection.js",
-      "_Image.js"
+      "_ContentSection.js"
     ],
     "isEntry": true,
     "src": "src/routes/(waves)/+page.svelte"

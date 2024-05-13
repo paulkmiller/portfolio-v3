@@ -14,27 +14,19 @@
 	"/(waves)/404": [
 		"src/routes/+layout.ts"
 	],
-	"/(blog-article)/blog-posts": [
-		"src/routes/(blog-article)/+layout.server.ts",
-		"src/routes/+layout.ts"
-	],
 	"/(waves)/blog": [
 		"src/routes/(waves)/blog/+page.server.ts",
-		"src/routes/+layout.ts"
-	],
-	"/(blog-article)/customization": [
-		"src/routes/(blog-article)/+layout.server.ts",
 		"src/routes/+layout.ts"
 	],
 	"/(blog-article)/moving-to-colorado": [
 		"src/routes/(blog-article)/+layout.server.ts",
 		"src/routes/+layout.ts"
 	],
-	"/(blog-article)/project-structure": [
-		"src/routes/(blog-article)/+layout.server.ts",
-		"src/routes/+layout.ts"
-	],
 	"/rss.xml": [
 		"src/routes/rss.xml/+server.ts"
+	],
+	"/(blog-article)/steamdeck-modded-fallout4": [
+		"src/routes/(blog-article)/+layout.server.ts",
+		"src/routes/+layout.ts"
 	]
 }
