@@ -1,6 +1,5 @@
 import { c as create_ssr_component, a as add_attribute } from "./index2.js";
-const Image_svelte_svelte_type_style_lang = "";
-const css = {
+/* empty css                                     */const css = {
   code: "img.svelte-1ykl0dj{width:100%;height:100%;object-fit:contain}",
   map: null
 };

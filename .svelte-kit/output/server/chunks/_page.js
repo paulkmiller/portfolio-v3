@@ -9,7 +9,7 @@ const metadata = {
   "date": "2023-04-22T21:55:15.361Z",
   "excerpt": "How to manage existing blog posts and create new ones",
   "tags": ["Documentation"],
-  "hidden": false
+  "hidden": true
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<p>All blog posts are located inside the <code>src/routes/(blog-article)</code> folder. Each folder inside it represents a blog post, and each folder has a <code>+page.md</code> file, which is the file that contains the post’s content.</p>

@@ -7,7 +7,7 @@ const metadata = {
   "excerpt": "How code and structure are organized.",
   "coverImage": "/images/posts/project-structure.jpg",
   "tags": ["Documentation"],
-  "hidden": false
+  "hidden": true
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<p>This project follows the basic <a href="https://kit.svelte.dev/docs/project-structure" rel="nofollow">SvelteKit structure</a>, with some added conventions to make customization a post-management easier.</p>

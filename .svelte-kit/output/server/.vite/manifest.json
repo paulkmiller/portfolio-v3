@@ -24,7 +24,7 @@
     "src": "ContentSection.css"
   },
   "Footer.css": {
-    "file": "_app/immutable/assets/Footer.f44de2b4.css",
+    "file": "_app/immutable/assets/Footer.293c1104.css",
     "src": "Footer.css"
   },
   "Image.css": {
@@ -76,7 +76,7 @@
   },
   "_Footer.js": {
     "css": [
-      "_app/immutable/assets/Footer.f44de2b4.css"
+      "_app/immutable/assets/Footer.293c1104.css"
     ],
     "file": "chunks/Footer.js",
     "imports": [
@@ -119,12 +119,14 @@
     ]
   },
   "__page3.js": {
+    "css": [
+      "_app/immutable/assets/Image.0954db74.css"
+    ],
     "file": "chunks/_page3.js",
     "imports": [
       "_index2.js",
       "_Callout.js",
-      "_CodeBlock.js",
-      "_Image.js"
+      "_CodeBlock.js"
     ]
   },
   "__page4.js": {
@@ -394,12 +396,14 @@
     "src": "src/routes/(blog-article)/customization/+page.md"
   },
   "src/routes/(blog-article)/moving-to-colorado/+page.md": {
+    "css": [
+      "_app/immutable/assets/Image.0954db74.css"
+    ],
     "file": "entries/pages/(blog-article)/moving-to-colorado/_page.md.js",
     "imports": [
       "_index2.js",
       "_Callout.js",
       "_CodeBlock.js",
-      "_Image.js",
       "__page3.js"
     ],
     "isEntry": true,
