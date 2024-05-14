@@ -447,7 +447,7 @@
     "src": "src/routes/+error.svelte"
   },
   "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout.b5306160.css",
+    "file": "_app/immutable/assets/_layout.bc583287.css",
     "src": "src/routes/+layout.css"
   },
   "src/routes/+layout.svelte": {
@@ -494,7 +494,7 @@
       "_app/immutable/assets/ubuntu-mono-latin-400-normal.b07e4ebe.woff2"
     ],
     "css": [
-      "_app/immutable/assets/_layout.b5306160.css"
+      "_app/immutable/assets/_layout.bc583287.css"
     ],
     "file": "entries/pages/_layout.svelte.js",
     "imports": [
