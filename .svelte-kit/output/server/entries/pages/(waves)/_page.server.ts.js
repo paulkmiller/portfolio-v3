@@ -2,7 +2,7 @@ import { f as filteredPosts } from "../../../chunks/index3.js";
 const projects = [
   {
     name: "PaulHealth & Blog",
-    description: "Sveltekit 1.0 using Contentful as a headless CMS. Each component is configurable, the layout organized, and all contact entries are managed by and sent to Contentful. Deployed using GCP. Entire frontend is custom.",
+    description: "Sveltekit 3.58 using Contentful as a headless CMS. Each component is configurable, the layout organized, and all contact entries are managed by and sent to Contentful. Deployed using GCP. Entire frontend is custom.",
     link: "https://paulhealth.ue.r.appspot.com/home/",
     image: "images/projects/paulHealth.png",
     tags: [

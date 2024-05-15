@@ -20,7 +20,7 @@
     "src": "Footer.css"
   },
   "Image.css": {
-    "file": "_app/immutable/assets/Image.0954db74.css",
+    "file": "_app/immutable/assets/Image.bb091967.css",
     "src": "Image.css"
   },
   "Socials.css": {
@@ -39,13 +39,13 @@
   },
   "_ContentSection.js": {
     "css": [
-      "_app/immutable/assets/ContentSection.86f945e6.css",
-      "_app/immutable/assets/Image.0954db74.css"
+      "_app/immutable/assets/ContentSection.86f945e6.css"
     ],
     "file": "chunks/ContentSection.js",
     "imports": [
       "_index2.js",
-      "_regex.js"
+      "_regex.js",
+      "_Image.js"
     ]
   },
   "_Footer.js": {
@@ -59,6 +59,15 @@
       "_index.js"
     ]
   },
+  "_Image.js": {
+    "css": [
+      "_app/immutable/assets/Image.bb091967.css"
+    ],
+    "file": "chunks/Image.js",
+    "imports": [
+      "_index2.js"
+    ]
+  },
   "_Socials.js": {
     "css": [
       "_app/immutable/assets/Socials.1c0e54d1.css"
@@ -70,12 +79,12 @@
   },
   "__page.js": {
     "css": [
-      "_app/immutable/assets/_page.2ac225e0.css",
-      "_app/immutable/assets/Image.0954db74.css"
+      "_app/immutable/assets/_page.2ac225e0.css"
     ],
     "file": "chunks/_page.js",
     "imports": [
-      "_index2.js"
+      "_index2.js",
+      "_Image.js"
     ]
   },
   "__page2.js": {
@@ -298,7 +307,7 @@
     "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js"
   },
   "src/routes/(blog-article)/+layout.css": {
-    "file": "_app/immutable/assets/_layout.c37c829b.css",
+    "file": "_app/immutable/assets/_layout.5095858c.css",
     "src": "src/routes/(blog-article)/+layout.css"
   },
   "src/routes/(blog-article)/+layout.server.ts": {
@@ -311,26 +320,25 @@
   },
   "src/routes/(blog-article)/+layout.svelte": {
     "css": [
-      "_app/immutable/assets/_layout.c37c829b.css"
+      "_app/immutable/assets/_layout.5095858c.css"
     ],
     "file": "entries/pages/(blog-article)/_layout.svelte.js",
     "imports": [
       "_index2.js",
       "_Footer.js",
       "_ContentSection.js",
-      "_meta.js"
+      "_meta.js",
+      "_Image.js"
     ],
     "isEntry": true,
     "src": "src/routes/(blog-article)/+layout.svelte"
   },
   "src/routes/(blog-article)/moving-to-colorado/+page.md": {
-    "css": [
-      "_app/immutable/assets/Image.0954db74.css"
-    ],
     "file": "entries/pages/(blog-article)/moving-to-colorado/_page.md.js",
     "imports": [
       "_index2.js",
-      "__page.js"
+      "__page.js",
+      "_Image.js"
     ],
     "isEntry": true,
     "src": "src/routes/(blog-article)/moving-to-colorado/+page.md"
@@ -382,7 +390,8 @@
       "_index2.js",
       "_Socials.js",
       "_Button.js",
-      "_ContentSection.js"
+      "_ContentSection.js",
+      "_Image.js"
     ],
     "isEntry": true,
     "src": "src/routes/(waves)/+page.svelte"

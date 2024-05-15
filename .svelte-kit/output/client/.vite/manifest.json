@@ -11,7 +11,7 @@
       ".svelte-kit/generated/client-optimized/nodes/7.js",
       ".svelte-kit/generated/client-optimized/nodes/8.js"
     ],
-    "file": "_app/immutable/entry/app.3fa78c1e.js",
+    "file": "_app/immutable/entry/app.59a7fb35.js",
     "imports": [
       "_index.c7992fe2.js"
     ],
@@ -96,19 +96,20 @@
     "src": ".svelte-kit/generated/client-optimized/nodes/1.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/2.css": {
-    "file": "_app/immutable/assets/2.c37c829b.css",
+    "file": "_app/immutable/assets/2.5095858c.css",
     "src": ".svelte-kit/generated/client-optimized/nodes/2.css"
   },
   ".svelte-kit/generated/client-optimized/nodes/2.js": {
     "css": [
-      "_app/immutable/assets/2.c37c829b.css"
+      "_app/immutable/assets/2.5095858c.css"
     ],
-    "file": "_app/immutable/nodes/2.74f4dfaf.js",
+    "file": "_app/immutable/nodes/2.a7dfe157.js",
     "imports": [
       "_index.c7992fe2.js",
       "_Footer.63d7edcd.js",
-      "_ContentSection.c04f0a49.js",
-      "_meta.b74a4754.js"
+      "_ContentSection.a39b28a5.js",
+      "_meta.b74a4754.js",
+      "_Image.6cf4b65f.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -138,12 +139,12 @@
   },
   ".svelte-kit/generated/client-optimized/nodes/4.js": {
     "css": [
-      "_app/immutable/assets/4.2ac225e0.css",
-      "_app/immutable/assets/Image.0954db74.css"
+      "_app/immutable/assets/4.2ac225e0.css"
     ],
-    "file": "_app/immutable/nodes/4.0dab0bd2.js",
+    "file": "_app/immutable/nodes/4.1b19300b.js",
     "imports": [
-      "_index.c7992fe2.js"
+      "_index.c7992fe2.js",
+      "_Image.6cf4b65f.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -166,12 +167,13 @@
     "css": [
       "_app/immutable/assets/6.06830b41.css"
     ],
-    "file": "_app/immutable/nodes/6.14f24cc5.js",
+    "file": "_app/immutable/nodes/6.b5be157c.js",
     "imports": [
       "_index.c7992fe2.js",
       "_Socials.e586c758.js",
       "_Button.6162fbd1.js",
-      "_ContentSection.c04f0a49.js"
+      "_ContentSection.a39b28a5.js",
+      "_Image.6cf4b65f.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -203,10 +205,10 @@
     "css": [
       "_app/immutable/assets/8.bbabfa68.css"
     ],
-    "file": "_app/immutable/nodes/8.0d27eb62.js",
+    "file": "_app/immutable/nodes/8.a228c96f.js",
     "imports": [
       "_index.c7992fe2.js",
-      "_ContentSection.c04f0a49.js"
+      "_ContentSection.a39b28a5.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -225,7 +227,7 @@
     "src": "Footer.css"
   },
   "Image.css": {
-    "file": "_app/immutable/assets/Image.0954db74.css",
+    "file": "_app/immutable/assets/Image.bb091967.css",
     "src": "Image.css"
   },
   "Socials.css": {
@@ -242,15 +244,15 @@
       "_regex.7dfa9b23.js"
     ]
   },
-  "_ContentSection.c04f0a49.js": {
+  "_ContentSection.a39b28a5.js": {
     "css": [
-      "_app/immutable/assets/ContentSection.86f945e6.css",
-      "_app/immutable/assets/Image.0954db74.css"
+      "_app/immutable/assets/ContentSection.86f945e6.css"
     ],
-    "file": "_app/immutable/chunks/ContentSection.c04f0a49.js",
+    "file": "_app/immutable/chunks/ContentSection.a39b28a5.js",
     "imports": [
       "_index.c7992fe2.js",
-      "_regex.7dfa9b23.js"
+      "_regex.7dfa9b23.js",
+      "_Image.6cf4b65f.js"
     ]
   },
   "_Footer.63d7edcd.js": {
@@ -262,6 +264,15 @@
       "_index.c7992fe2.js",
       "_Socials.e586c758.js",
       "_index.12c3ab83.js"
+    ]
+  },
+  "_Image.6cf4b65f.js": {
+    "css": [
+      "_app/immutable/assets/Image.bb091967.css"
+    ],
+    "file": "_app/immutable/chunks/Image.6cf4b65f.js",
+    "imports": [
+      "_index.c7992fe2.js"
     ]
   },
   "_Socials.e586c758.js": {
@@ -455,7 +466,7 @@
     "src": "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-latin-ext-400-normal.woff2"
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/entry/start.5ed8ab4c.js",
+    "file": "_app/immutable/entry/start.1fde5741.js",
     "imports": [
       "_index.c7992fe2.js",
       "_index.12c3ab83.js"

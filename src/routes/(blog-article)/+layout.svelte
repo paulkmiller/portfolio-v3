@@ -159,6 +159,10 @@
 			object-fit: cover;
 		}
 
+		:global(.cover-image figcaption) {
+			 visibility: hidden;
+		}
+
 		.content {
 			display: grid;
 			grid-template-columns:

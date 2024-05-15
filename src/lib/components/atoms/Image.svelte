@@ -4,6 +4,8 @@
 	export let src: string;
 	export let alt: string;
 	export let fullBleed: boolean | undefined = undefined;
+	export let width: string | undefined = undefined;
+	export let height: string | undefined = undefined;
 
 	export let formats: string[] = ['avif', 'webp', 'png'];
 	export let widths: string[] | undefined = undefined;
@@ -37,12 +39,35 @@
 	}
 </script>
 
-<img srcset={buildSrcset()} {src} {alt} loading="lazy" decoding="async" class:full-bleed={fullBleed} />
+<figure>
+	<img
+		srcset={buildSrcset()}
+		{src}
+		{alt}
+		loading="lazy"
+		decoding="async"
+		class:full-bleed={fullBleed}
+		style:width={width}
+		style:height={height}
+	/>
+	<figcaption>{alt}</figcaption>
+</figure>
 
 <style lang="scss">
+	figure {
+		width: 100%;
+		display: inline-block;
+	}
+
 	img {
 		width: 100%;
 		height: 100%;
 		object-fit: contain;
+	}
+
+	figcaption {
+		text-align: center;
+		font-size: 0.9rem;
+		margin: 0.5rem;
 	}
 </style>
