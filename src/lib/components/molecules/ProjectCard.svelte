@@ -78,6 +78,10 @@
 		}
 	}
 
+	:global(.project-card figcaption) {
+		display: none;
+	}
+
 	:global(.project-card .image img) {
 		object-fit: cover;
 	}
