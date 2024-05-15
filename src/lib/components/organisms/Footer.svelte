@@ -41,7 +41,7 @@
 			text-align: center;
 
 			background-image: url(https://i.imgur.com/QQNxJfu.png);
-    	background-size: 27%;
+    	background-size: contain;
 
 			@include for-phone-only {
 				background-size: auto;
