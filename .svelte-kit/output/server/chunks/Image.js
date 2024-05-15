@@ -1,7 +1,7 @@
 import { c as create_ssr_component, a as add_attribute, g as add_styles, b as escape } from "./index2.js";
 const Image_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "figure.svelte-62mrw6{width:100%;display:inline-block}img.svelte-62mrw6{width:100%;height:100%;object-fit:contain}figcaption.svelte-62mrw6{text-align:center;font-size:0.9rem;margin:0.5rem}",
+  code: "figure.svelte-kkiy50{height:100%;width:100%;display:inline-block}img.svelte-kkiy50{width:100%;height:100%;object-fit:contain}figcaption.svelte-kkiy50{text-align:center;font-size:0.9rem;margin:0.5rem}",
   map: null
 };
 const Image = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -48,8 +48,8 @@ const Image = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.widths(widths);
   $$result.css.add(css);
   fileName = src.split(".")[0];
-  return `<figure class="svelte-62mrw6"><img${add_attribute("srcset", buildSrcset(), 0)}${add_attribute("src", src, 0)}${add_attribute("alt", alt, 0)} loading="lazy" decoding="async" class="${["svelte-62mrw6", fullBleed ? "full-bleed" : ""].join(" ").trim()}"${add_styles({ width, height })}>
-	<figcaption class="svelte-62mrw6">${escape(alt)}</figcaption></figure>`;
+  return `<figure class="svelte-kkiy50"><img${add_attribute("srcset", buildSrcset(), 0)}${add_attribute("src", src, 0)}${add_attribute("alt", alt, 0)} loading="lazy" decoding="async" class="${["svelte-kkiy50", fullBleed ? "full-bleed" : ""].join(" ").trim()}"${add_styles({ width, height })}>
+	<figcaption class="svelte-kkiy50">${escape(alt)}</figcaption></figure>`;
 });
 export {
   Image as I

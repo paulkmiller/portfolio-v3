@@ -77,15 +77,15 @@ const Footer_wave = create_ssr_component(($$result, $$props, $$bindings, slots) 
 });
 const Footer_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "footer.svelte-12bcocp.svelte-12bcocp{height:340px;width:100%;background:linear-gradient(60deg, var(--color--waves-start) 0%, var(--color--waves-end) 100%);display:grid;grid-template-rows:120px 1fr}footer.svelte-12bcocp .content.svelte-12bcocp{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:10px;font-weight:600;text-align:center;background-image:url(https://i.imgur.com/QQNxJfu.png);background-size:27%}@media(max-width: 767px){footer.svelte-12bcocp .content.svelte-12bcocp{background-size:auto}}footer.svelte-12bcocp .content .credits.svelte-12bcocp{font-weight:400;font-size:90%;color:var(--color--white);margin-top:-10px}footer.svelte-12bcocp .content .socials.svelte-12bcocp{display:flex;align-items:center;gap:20px}footer.svelte-12bcocp a.svelte-12bcocp:hover{filter:drop-shadow(0px 0px 3px var(--color--primary))}",
+  code: "footer.svelte-ihsxy7.svelte-ihsxy7{height:340px;width:100%;background:linear-gradient(60deg, var(--color--waves-start) 0%, var(--color--waves-end) 100%);display:grid;grid-template-rows:120px 1fr}footer.svelte-ihsxy7 .content.svelte-ihsxy7{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:10px;font-weight:600;text-align:center;background-image:url(https://i.imgur.com/QQNxJfu.png);background-size:contain}@media(max-width: 767px){footer.svelte-ihsxy7 .content.svelte-ihsxy7{background-size:auto}}footer.svelte-ihsxy7 .content .credits.svelte-ihsxy7{font-weight:400;font-size:90%;color:var(--color--white);margin-top:-10px}footer.svelte-ihsxy7 .content .socials.svelte-ihsxy7{display:flex;align-items:center;gap:20px}footer.svelte-ihsxy7 a.svelte-ihsxy7:hover{filter:drop-shadow(0px 0px 3px var(--color--primary))}",
   map: null
 };
 const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<footer class="svelte-12bcocp"><div class="wave">${validate_component(Footer_wave, "FooterWave").$$render($$result, {}, {}, {})}</div>
-	<div class="content svelte-12bcocp"><div class="credits svelte-12bcocp">Site powered by <a href="https://kit.svelte.dev/" class="svelte-12bcocp">Svelte</a>, <a href="https://iconoir.com/" class="svelte-12bcocp">Iconoir</a> and ☕
+  return `<footer class="svelte-ihsxy7"><div class="wave">${validate_component(Footer_wave, "FooterWave").$$render($$result, {}, {}, {})}</div>
+	<div class="content svelte-ihsxy7"><div class="credits svelte-ihsxy7">Site powered by <a href="https://kit.svelte.dev/" class="svelte-ihsxy7">Svelte</a>, <a href="https://iconoir.com/" class="svelte-ihsxy7">Iconoir</a> and ☕
 		</div>
-		<div class="socials svelte-12bcocp">${validate_component(Socials, "Socials").$$render($$result, {}, {}, {})}
+		<div class="socials svelte-ihsxy7">${validate_component(Socials, "Socials").$$render($$result, {}, {}, {})}
 			${validate_component(RssLink, "RssLink").$$render($$result, {}, {}, {})}
 			${validate_component(ThemeToggle, "ThemeToggle").$$render($$result, {}, {}, {})}</div></div>
 </footer>`;

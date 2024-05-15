@@ -229,7 +229,7 @@ const Open = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const ProjectCard_svelte_svelte_type_style_lang = "";
 const css$2 = {
-  code: ".content.svelte-12qz45h{display:flex;flex-direction:column;gap:10px;align-items:flex-start}.title.svelte-12qz45h{display:flex;align-items:center;justify-content:space-between;width:100%;font-size:1.2rem;font-family:var(--font--title);font-weight:700}.title.svelte-12qz45h svg{height:25px;width:25px}.tags.svelte-12qz45h{display:flex;align-items:center;gap:5px;flex-wrap:wrap}.footer.svelte-12qz45h{margin-top:20px}@media(max-width: 767px){.project-card .image{display:none}}.project-card .image img{object-fit:cover}",
+  code: ".content.svelte-1w50j5m{display:flex;flex-direction:column;gap:10px;align-items:flex-start}.title.svelte-1w50j5m{display:flex;align-items:center;justify-content:space-between;width:100%;font-size:1.2rem;font-family:var(--font--title);font-weight:700}.title.svelte-1w50j5m svg{height:25px;width:25px}.tags.svelte-1w50j5m{display:flex;align-items:center;gap:5px;flex-wrap:wrap}.footer.svelte-1w50j5m{margin-top:20px}@media(max-width: 767px){.project-card .image{display:none}}.project-card figcaption{display:none}.project-card .image img{object-fit:cover}",
   map: null
 };
 const ProjectCard = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -258,7 +258,7 @@ const ProjectCard = create_ssr_component(($$result, $$props, $$bindings, slots) 
     {},
     {
       footer: () => {
-        return `<div class="footer svelte-12qz45h" slot="footer">${tags && tags.length > 0 ? `<div class="tags svelte-12qz45h">${each(tags, (tag) => {
+        return `<div class="footer svelte-1w50j5m" slot="footer">${tags && tags.length > 0 ? `<div class="tags svelte-1w50j5m">${each(tags, (tag) => {
           return `${validate_component(Tag, "Tag").$$render($$result, { color: tag.color }, {}, {
             default: () => {
               return `${escape(tag.label)}`;
@@ -267,7 +267,7 @@ const ProjectCard = create_ssr_component(($$result, $$props, $$bindings, slots) 
         })}</div>` : ``}</div>`;
       },
       content: () => {
-        return `<div class="content svelte-12qz45h" slot="content"><div class="title svelte-12qz45h"><span>${escape(name)}</span>
+        return `<div class="content svelte-1w50j5m" slot="content"><div class="title svelte-1w50j5m"><span>${escape(name)}</span>
 			${validate_component(Open, "Open").$$render($$result, {}, {}, {})}</div>
 		<h6>${escape(description)}</h6></div>`;
       },

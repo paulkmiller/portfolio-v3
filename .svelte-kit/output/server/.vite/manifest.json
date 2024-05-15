@@ -16,11 +16,11 @@
     "src": "ContentSection.css"
   },
   "Footer.css": {
-    "file": "_app/immutable/assets/Footer.293c1104.css",
+    "file": "_app/immutable/assets/Footer.64493e7c.css",
     "src": "Footer.css"
   },
   "Image.css": {
-    "file": "_app/immutable/assets/Image.bb091967.css",
+    "file": "_app/immutable/assets/Image.c35dc37b.css",
     "src": "Image.css"
   },
   "Socials.css": {
@@ -50,7 +50,7 @@
   },
   "_Footer.js": {
     "css": [
-      "_app/immutable/assets/Footer.293c1104.css"
+      "_app/immutable/assets/Footer.64493e7c.css"
     ],
     "file": "chunks/Footer.js",
     "imports": [
@@ -61,7 +61,7 @@
   },
   "_Image.js": {
     "css": [
-      "_app/immutable/assets/Image.bb091967.css"
+      "_app/immutable/assets/Image.c35dc37b.css"
     ],
     "file": "chunks/Image.js",
     "imports": [
@@ -370,7 +370,7 @@
     "src": "src/routes/(waves)/+layout.svelte"
   },
   "src/routes/(waves)/+page.css": {
-    "file": "_app/immutable/assets/_page.a9c69708.css",
+    "file": "_app/immutable/assets/_page.32e7a0bd.css",
     "src": "src/routes/(waves)/+page.css"
   },
   "src/routes/(waves)/+page.server.ts": {
@@ -383,7 +383,7 @@
   },
   "src/routes/(waves)/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.a9c69708.css"
+      "_app/immutable/assets/_page.32e7a0bd.css"
     ],
     "file": "entries/pages/(waves)/_page.svelte.js",
     "imports": [
