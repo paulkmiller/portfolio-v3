@@ -19,9 +19,9 @@ const css = {
 const Socials = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `<div class="socials svelte-t4kqcq"><a href="https://mastodon.social/@PaulMiller" target="_blank" rel="me noreferrer" title="Say Hi on Mastodon" class="svelte-t4kqcq">${validate_component(Mastodon, "MastodonIcon").$$render($$result, {}, {}, {})}</a>
-	<a href="https://github.com/paulkmiller" target="_blank" rel="noopener noreferrer" title="See my GitHub profile" class="svelte-t4kqcq">${validate_component(Github, "GitHubIcon").$$render($$result, {}, {}, {})}</a>
-	<a href="https://www.linkedin.com/in/paulmiller88/" target="_blank" rel="noopener noreferrer" title="Connect on LinkedIn" class="svelte-t4kqcq">${validate_component(Linkedin, "LinkedInIcon").$$render($$result, {}, {}, {})}</a>
-	<a href="mailto:paulkerrymiller@gmail.com" target="_blank" rel="noopener noreferrer" title="Send an email" class="svelte-t4kqcq">${validate_component(Email, "EmailIcon").$$render($$result, {}, {}, {})}</a>
+  <a href="https://github.com/paulkmiller" target="_blank" rel="noopener noreferrer" title="See my GitHub profile" class="svelte-t4kqcq">${validate_component(Github, "GitHubIcon").$$render($$result, {}, {}, {})}</a>
+  <a href="https://www.linkedin.com/in/paulmiller88/" target="_blank" rel="noopener noreferrer" title="Connect on LinkedIn" class="svelte-t4kqcq">${validate_component(Linkedin, "LinkedInIcon").$$render($$result, {}, {}, {})}</a>
+  <a href="mailto:paulkerrymiller@gmail.com" target="_blank" rel="noopener noreferrer" title="Send an email" class="svelte-t4kqcq">${validate_component(Email, "EmailIcon").$$render($$result, {}, {}, {})}</a>
 </div>`;
 });
 export {

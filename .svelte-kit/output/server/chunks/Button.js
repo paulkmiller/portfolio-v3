@@ -53,7 +53,7 @@ const Button = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       ],
       { classes: "svelte-6zxw49" }
     )}>${is_void(tag$1) ? "" : `${$$slots["icon"] ? `<div class="icon svelte-6zxw49">${slots.icon ? slots.icon({}) : ``}</div>` : ``}
-	${slots.default ? slots.default({}) : ``}
+  ${slots.default ? slots.default({}) : ``}
 `}${is_void(tag$1) ? "" : `</${tag$1}>`}` : "";
   })(tag)}`;
 });

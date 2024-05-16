@@ -30,7 +30,8 @@ const HeroImage = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   $$result.css.add(css$a);
   return `<div class="img-container svelte-wu8m8g"><img alt="" class="img svelte-wu8m8g"${add_styles({
     "background-image": `url(/images/pic1.gif)`,
-    "transform": `perspective(500px) ${""} rotateX(${xRotation}deg) rotateY(${yRotation}deg)`,
+    "transform": `perspective(500px) ${""} rotateX(${xRotation}deg)
+    rotateY(${yRotation}deg)`,
     "align-self": `center`
   })}></div>`;
 });
@@ -80,7 +81,7 @@ const Sparkles = create_ssr_component(($$result, $$props, $$bindings, slots) => 
       {}
     )}`;
   })}
-	<span class="slot-wrapper svelte-exdx8u">${slots.default ? slots.default({}) : ``}</span>
+  <span class="slot-wrapper svelte-exdx8u">${slots.default ? slots.default({}) : ``}</span>
 </div>`;
 });
 const SparklingHighlight_svelte_svelte_type_style_lang = "";
@@ -113,7 +114,7 @@ const DiscoverButton = create_ssr_component(($$result, $$props, $$bindings, slot
     $$bindings.side(side);
   $$result.css.add(css$6);
   return `<button class="${["svelte-160e42u", side ? "button-with-side" : ""].join(" ").trim()}"><div class="${["svelte-160e42u", side ? "side" : ""].join(" ").trim()}"></div>
-	${slots.default ? slots.default({}) : ``}</button>`;
+  ${slots.default ? slots.default({}) : ``}</button>`;
 });
 const Hero_svelte_svelte_type_style_lang = "";
 const css$5 = {
@@ -125,27 +126,27 @@ const Hero = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$5);
   tip = "Probably getting my butt kicked 🙃";
   return `<section id="hero" class="svelte-14zg98j"><div class="info svelte-14zg98j"><h1 class="svelte-14zg98j">Paul Miller</h1>
-		<h2 class="svelte-14zg98j">I am a cat dad, gamer, and... 
-			${validate_component(SparklingHighlight, "SparklingHighlight").$$render($$result, { color: "secondary" }, {}, {
+    <h2 class="svelte-14zg98j">I am a cat dad, gamer, and...
+      ${validate_component(SparklingHighlight, "SparklingHighlight").$$render($$result, { color: "secondary" }, {}, {
     default: () => {
       return `Front End Developer!`;
     }
   })}</h2>
-		<p class="svelte-14zg98j">Bringing Designs to Life <span class="secondary svelte-14zg98j">&amp;</span><br>
-			Probably playing ${validate_component(Tooltip, "Tooltip").$$render($$result, { tip }, {}, {
+    <p class="svelte-14zg98j">Bringing Designs to Life <span class="secondary svelte-14zg98j">&amp;</span><br>
+      Probably playing ${validate_component(Tooltip, "Tooltip").$$render($$result, { tip }, {}, {
     default: () => {
       return `<a href="https://steamcommunity.com/id/Kahram/" target="_blank">games</a>`;
     }
   })} or petting my cats.
-		</p>
-		<div class="socials svelte-14zg98j"><span class="svelte-14zg98j">Socials:</span>
-			${validate_component(Socials, "Socials").$$render($$result, {}, {}, {})}</div>
-		${validate_component(DiscoverButton, "DiscoverButton").$$render($$result, { side: true }, {}, {
+    </p>
+    <div class="socials svelte-14zg98j"><span class="svelte-14zg98j">Socials:</span>
+      ${validate_component(Socials, "Socials").$$render($$result, {}, {}, {})}</div>
+    ${validate_component(DiscoverButton, "DiscoverButton").$$render($$result, { side: true }, {}, {
     default: () => {
       return `Discover my work ↓`;
     }
   })}</div>
-	${validate_component(HeroImage, "HeroImage").$$render($$result, {}, {}, {})}
+  ${validate_component(HeroImage, "HeroImage").$$render($$result, {}, {}, {})}
 </section>`;
 });
 const About_svelte_svelte_type_style_lang = "";
@@ -156,13 +157,23 @@ const css$4 = {
 const About = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$4);
   return `<section id="about" class="wrapper svelte-jsmmw5"><div class="text svelte-jsmmw5">
-		<p>Hey there! I&#39;m Paul, a frontend developer who loves bringing designs to life through code. There&#39;s nothing quite like the thrill of transforming a static mockup into an interactive, engaging experience that users can enjoy.
-		</p>
-		<p>Over the years, I&#39;ve had the opportunity to work with a wide range of technologies, from JavaScript frameworks like React and Vue to backend systems like Ruby on Rails and PHP. More recently, I&#39;ve been diving into Sveltekit and Go, along with headless CMS solutions like Strapi and Contentful. 
-		</p>
-		<p>If you&#39;re looking for a frontend developer who&#39;s equal parts creative and technical, I&#39;d love to chat. Feel free to check out my blog if you want to see what I&#39;m up too! And if you&#39;ve got a design that you&#39;re dying to see brought to life, let&#39;s definitely talk!
-		</p></div>
-		<div class="ctas svelte-jsmmw5">${validate_component(Sparkles, "Sparkles").$$render($$result, {}, {}, {
+    <p>Hey there! I&#39;m Paul, a frontend developer who loves bringing designs to
+      life through code. There&#39;s nothing quite like the thrill of transforming a
+      static mockup into an interactive, engaging experience that users can
+      enjoy.
+    </p>
+    <p>Over the years, I&#39;ve had the opportunity to work with a wide range of
+      technologies, from JavaScript frameworks like React and Vue to backend
+      systems like Ruby on Rails and PHP. More recently, I&#39;ve been diving into
+      Sveltekit and Go, along with headless CMS solutions like Strapi and
+      Contentful.
+    </p>
+    <p>If you&#39;re looking for a frontend developer who&#39;s equal parts creative and
+      technical, I&#39;d love to chat. Feel free to check out my blog if you want to
+      see what I&#39;m up too! And if you&#39;ve got a design that you&#39;re dying to see
+      brought to life, let&#39;s definitely talk!
+    </p></div>
+  <div class="ctas svelte-jsmmw5">${validate_component(Sparkles, "Sparkles").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(Button, "Button").$$render($$result, { href: "mailto:paulkerrymiller@gmail.com" }, {}, {
         icon: () => {
@@ -170,7 +181,7 @@ const About = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         },
         default: () => {
           return `Contact Me
-				`;
+      `;
         }
       })}`;
     }
@@ -268,8 +279,8 @@ const ProjectCard = create_ssr_component(($$result, $$props, $$bindings, slots) 
       },
       content: () => {
         return `<div class="content svelte-1w50j5m" slot="content"><div class="title svelte-1w50j5m"><span>${escape(name)}</span>
-			${validate_component(Open, "Open").$$render($$result, {}, {}, {})}</div>
-		<h6>${escape(description)}</h6></div>`;
+      ${validate_component(Open, "Open").$$render($$result, {}, {}, {})}</div>
+    <h6>${escape(description)}</h6></div>`;
       },
       image: () => {
         return `<div class="image" slot="image">${validate_component(Image, "Image").$$render(
@@ -315,7 +326,7 @@ const Projects = create_ssr_component(($$result, $$props, $$bindings, slots) => 
     {
       default: () => {
         return `${validate_component(ParticlesBackground, "ParticlesBackground").$$render($$result, {}, {}, {})}
-	<div class="projects-container svelte-1ixyf5e"><div class="two-group-grid svelte-1ixyf5e">${each(projects, (project) => {
+  <div class="projects-container svelte-1ixyf5e"><div class="two-group-grid svelte-1ixyf5e">${each(projects, (project) => {
           return `${validate_component(ProjectCard, "ProjectCard").$$render(
             $$result,
             {
@@ -339,9 +350,9 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   if ($$props.data === void 0 && $$bindings.data && data !== void 0)
     $$bindings.data(data);
   return `<div class="container">${validate_component(Hero, "Hero").$$render($$result, {}, {}, {})}
-	${validate_component(About, "About").$$render($$result, {}, {}, {})}
-	${validate_component(Projects, "Projects").$$render($$result, { projects }, {}, {})}
-	${posts && posts.length > 0 ? `${validate_component(RecentPosts, "RecentPosts").$$render($$result, { posts }, {}, {})}` : ``}</div>`;
+  ${validate_component(About, "About").$$render($$result, {}, {}, {})}
+  ${validate_component(Projects, "Projects").$$render($$result, { projects }, {}, {})}
+  ${posts && posts.length > 0 ? `${validate_component(RecentPosts, "RecentPosts").$$render($$result, { posts }, {}, {})}` : ``}</div>`;
 });
 export {
   Page as default

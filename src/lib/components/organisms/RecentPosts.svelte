@@ -1,46 +1,46 @@
 <script lang="ts">
-	import BlogPostCard from '$lib/components/molecules/BlogPostCard.svelte';
-	import ContentSection from '$lib/components/organisms/ContentSection.svelte';
-	import type { BlogPost } from '$lib/utils/types';
-	import Button from '$lib/components/atoms/Button.svelte';
+  import BlogPostCard from "$lib/components/molecules/BlogPostCard.svelte";
+  import ContentSection from "$lib/components/organisms/ContentSection.svelte";
+  import type { BlogPost } from "$lib/utils/types";
+  import Button from "$lib/components/atoms/Button.svelte";
 
-	export let posts: BlogPost[];
+  export let posts: BlogPost[];
 </script>
 
 <ContentSection
-	id="recent-posts"
-	title="Blog posts"
-	description="I write about things that intrigue me, life events, and personal thoughts. Want to learn more about me? This is the spot!"
-	align="left"
+  id="recent-posts"
+  title="Blog posts"
+  description="I write about things that intrigue me, life events, and personal thoughts. Want to learn more about me? This is the spot!"
+  align="left"
 >
-	<div slot="button">
-		<Button href="/blog">View More</Button>
-	</div>
-	<div class="grid">
-		{#each posts as post}
-			<BlogPostCard
-				slug={post.slug}
-				title={post.title}
-				excerpt={post.excerpt}
-				tags={post.tags}
-				readingTime={post.readingTime}
-				showImage={false}
-			/>
-		{/each}
-	</div>
+  <div slot="button">
+    <Button href="/blog">View More</Button>
+  </div>
+  <div class="grid">
+    {#each posts as post}
+      <BlogPostCard
+        slug={post.slug}
+        title={post.title}
+        excerpt={post.excerpt}
+        tags={post.tags}
+        readingTime={post.readingTime}
+        showImage={false}
+      />
+    {/each}
+  </div>
 </ContentSection>
 
 <style lang="scss">
-	@import '$lib/scss/breakpoints.scss';
+  @import "$lib/scss/breakpoints.scss";
 
-	.grid {
-		width: 100%;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-gap: 20px;
+  .grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
 
-		@include for-phone-only {
-			grid-template-columns: 1fr;
-		}
-	}
+    @include for-phone-only {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>

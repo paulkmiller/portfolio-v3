@@ -9,10 +9,12 @@ const css = {
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `<div class="error-page svelte-gnq28x"><div class="container svelte-gnq28x"><h1>Oh no! 404!</h1>
-		<div class="svg-wrapper svelte-gnq28x">${validate_component(Error, "Error").$$render($$result, {}, {}, {})}</div>
-		<p>It seems like coffee was spilled all over this page, and now it can&#39;t be displayed.</p>
-		<br>
-		${validate_component(Button, "Button").$$render($$result, { href: "/" }, {}, {
+    <div class="svg-wrapper svelte-gnq28x">${validate_component(Error, "Error").$$render($$result, {}, {}, {})}</div>
+    <p>It seems like coffee was spilled all over this page, and now it can&#39;t be
+      displayed.
+    </p>
+    <br>
+    ${validate_component(Button, "Button").$$render($$result, { href: "/" }, {}, {
     default: () => {
       return `Start over`;
     }

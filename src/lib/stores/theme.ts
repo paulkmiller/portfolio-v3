@@ -1,10 +1,10 @@
-import { writable } from 'svelte/store';
-import { browser } from '$app/environment';
+import { writable } from "svelte/store";
+import { browser } from "$app/environment";
 
 function createTheme() {
   let currentTheme;
   if (browser) {
-    currentTheme = localStorage.getItem('theme-preference') || 'auto';
+    currentTheme = localStorage.getItem("theme-preference") || "auto";
   }
 
   const { subscribe, set } = writable<string>(currentTheme);
@@ -13,11 +13,11 @@ function createTheme() {
     subscribe,
     set: (value: string) => {
       if (browser) {
-        localStorage.setItem('theme-preference', value);
-        document.firstElementChild?.setAttribute('data-theme', value);
+        localStorage.setItem("theme-preference", value);
+        document.firstElementChild?.setAttribute("data-theme", value);
       }
       set(value);
-    }
+    },
   };
 }
 

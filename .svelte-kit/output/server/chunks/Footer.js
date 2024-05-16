@@ -36,12 +36,13 @@ const ThemeToggle = create_ssr_component(($$result, $$props, $$bindings, slots) 
   $$result.css.add(css$3);
   $$unsubscribe_theme();
   return `<noscript>
-	<style>.theme-toggle {
-			display: none !important;
-		}
-	</style></noscript>
+  
+  <style>.theme-toggle {
+      display: none !important;
+    }
+  </style></noscript>
 <button class="theme-toggle svelte-niuf71" title="Toggle between light and dark theme"${add_attribute("data-theme", $theme, 0)}><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24"><mask id="moon" class="svelte-niuf71"><rect x="0" y="0" width="100%" height="100%" fill="white" class="svelte-niuf71"></rect><circle cx="40" cy="8" r="11" fill="black" class="svelte-niuf71"></circle></mask><circle id="sun" cx="12" cy="12" r="11" mask="url(#moon)" class="svelte-niuf71"></circle><g id="sun-beams" class="svelte-niuf71"><line x1="12" y1="1" x2="12" y2="3" class="svelte-niuf71"></line><line x1="12" y1="21" x2="12" y2="23" class="svelte-niuf71"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64" class="svelte-niuf71"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" class="svelte-niuf71"></line><line x1="1" y1="12" x2="3" y2="12" class="svelte-niuf71"></line><line x1="21" y1="12" x2="23" y2="12" class="svelte-niuf71"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36" class="svelte-niuf71"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" class="svelte-niuf71"></line></g></svg>
-	<span class="label svelte-niuf71">Auto</span>
+  <span class="label svelte-niuf71">Auto</span>
 </button>`;
 });
 const Rss = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -67,9 +68,9 @@ const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.showBackground(showBackground);
   $$result.css.add(css$1);
   return `<header class="${["svelte-1gvg2a4", showBackground ? "has-background" : ""].join(" ").trim()}"><nav class="container svelte-1gvg2a4"><a class="logo svelte-1gvg2a4" href="/" aria-label="Site logo">${validate_component(Logo, "Logo").$$render($$result, {}, {}, {})}</a>
-		<div class="links svelte-1gvg2a4"><a href="/blog" class="svelte-1gvg2a4">Blog</a>
-			${validate_component(RssLink, "RssLink").$$render($$result, {}, {}, {})}
-			${validate_component(ThemeToggle, "ThemeToggle").$$render($$result, {}, {}, {})}</div></nav>
+    <div class="links svelte-1gvg2a4"><a href="/blog" class="svelte-1gvg2a4">Blog</a>
+      ${validate_component(RssLink, "RssLink").$$render($$result, {}, {}, {})}
+      ${validate_component(ThemeToggle, "ThemeToggle").$$render($$result, {}, {}, {})}</div></nav>
 </header>`;
 });
 const Footer_wave = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -83,11 +84,12 @@ const css = {
 const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `<footer class="svelte-ihsxy7"><div class="wave">${validate_component(Footer_wave, "FooterWave").$$render($$result, {}, {}, {})}</div>
-	<div class="content svelte-ihsxy7"><div class="credits svelte-ihsxy7">Site powered by <a href="https://kit.svelte.dev/" class="svelte-ihsxy7">Svelte</a>, <a href="https://iconoir.com/" class="svelte-ihsxy7">Iconoir</a> and ☕
-		</div>
-		<div class="socials svelte-ihsxy7">${validate_component(Socials, "Socials").$$render($$result, {}, {}, {})}
-			${validate_component(RssLink, "RssLink").$$render($$result, {}, {}, {})}
-			${validate_component(ThemeToggle, "ThemeToggle").$$render($$result, {}, {}, {})}</div></div>
+  <div class="content svelte-ihsxy7"><div class="credits svelte-ihsxy7">Site powered by <a href="https://kit.svelte.dev/" class="svelte-ihsxy7">Svelte</a>,
+      <a href="https://iconoir.com/" class="svelte-ihsxy7">Iconoir</a> and ☕
+    </div>
+    <div class="socials svelte-ihsxy7">${validate_component(Socials, "Socials").$$render($$result, {}, {}, {})}
+      ${validate_component(RssLink, "RssLink").$$render($$result, {}, {}, {})}
+      ${validate_component(ThemeToggle, "ThemeToggle").$$render($$result, {}, {}, {})}</div></div>
 </footer>`;
 });
 export {

@@ -13,8 +13,11 @@
     "story:dev": "histoire dev",
     "story:build": "histoire build",
     "story:preview": "histoire preview",
+    "optimize-images": "image-transmutation --run --sourceFolder './static/images' --targetFolder './build/images' --inputFormats 'jpg' --inputFormats 'jpeg' --inputFormats 'png' --outputFormats 'png' --outputFormats 'webp' --outputFormats 'avif'",
+    "postbuild": "npm run optimize-images && svelte-sitemap --domain https://www.paulkmiller.com/",
     "vercel-sitemap": "svelte-sitemap --out-dir .vercel/output/static --domain https://www.paulkmiller.com/",
-    "vercel-build": "npm run build && npm run vercel-sitemap"
+    "vercel-optimize-images": "image-transmutation --run --sourceFolder '.vercel/output/static/images' --targetFolder '.vercel/output/static/images' --inputFormats 'jpg' --inputFormats 'jpeg' --inputFormats 'png' --outputFormats 'png' --outputFormats 'webp' --outputFormats 'avif'",
+    "vercel-build": "npm run vercel-sitemap && npm run vercel-optimize-images && npm run optimize-images && npm run build && npm run postbuild"
   },
   "devDependencies": {
     "@histoire/plugin-svelte": "^0.16.1",
@@ -45,7 +48,6 @@
   "dependencies": {
     "@fontsource/inter": "^4.5.15",
     "@fontsource/merriweather": "^4.5.14",
-    "@fontsource/ubuntu-mono": "^4.5.11",
-    "gsap": "^3.12.5"
+    "@fontsource/ubuntu-mono": "^4.5.11"
   }
 }

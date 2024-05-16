@@ -51,8 +51,8 @@ const Card = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       ],
       { classes: "svelte-1h3ghvu" }
     )}>${is_void(tag$1) ? "" : `${$$slots.image ? `<div class="image svelte-1h3ghvu">${slots.image ? slots.image({}) : ``}</div>` : ``}
-	<div class="body svelte-1h3ghvu"><div class="content svelte-1h3ghvu">${slots.content ? slots.content({}) : ``}</div>
-		${$$slots.footer ? `<div class="footer">${slots.footer ? slots.footer({}) : ``}</div>` : ``}</div>
+  <div class="body svelte-1h3ghvu"><div class="content svelte-1h3ghvu">${slots.content ? slots.content({}) : ``}</div>
+    ${$$slots.footer ? `<div class="footer">${slots.footer ? slots.footer({}) : ``}</div>` : ``}</div>
 `}${is_void(tag$1) ? "" : `</${tag$1}>`}` : "";
   })(tag)}`;
 });
@@ -104,8 +104,8 @@ const BlogPostCard = create_ssr_component(($$result, $$props, $$bindings, slots)
       },
       content: () => {
         return `<div class="content svelte-1v62nxu" slot="content"><p class="title svelte-1v62nxu">${escape(title)}</p>
-		${readingTime ? `<div class="note svelte-1v62nxu">${escape(readingTime)}</div>` : ``}
-		${excerpt ? `<p class="text svelte-1v62nxu">${escape(excerpt)}</p>` : ``}</div>`;
+    ${readingTime ? `<div class="note svelte-1v62nxu">${escape(readingTime)}</div>` : ``}
+    ${excerpt ? `<p class="text svelte-1v62nxu">${escape(excerpt)}</p>` : ``}</div>`;
       },
       image: () => {
         return `<div class="image" slot="image">${coverImage ? `${validate_component(Image, "Image").$$render(
@@ -142,9 +142,9 @@ const ContentSection = create_ssr_component(($$result, $$props, $$bindings, slot
     $$bindings.align(align);
   $$result.css.add(css);
   return `<section${add_attribute("id", id, 0)} class="${"content-section " + escape(align, true) + " svelte-1snaw8w"}"><div class="title-area svelte-1snaw8w">${title || description ? `<div class="text svelte-1snaw8w">${title ? `<h2><!-- HTML_TAG_START -->${title}<!-- HTML_TAG_END --></h2>` : ``}
-				${description ? `<p>${escape(description)}</p>` : ``}</div>` : ``}
-		${$$slots["button"] ? `<div class="button">${slots.button ? slots.button({}) : ``}</div>` : ``}</div>
-	<div class="content-area svelte-1snaw8w">${slots.default ? slots.default({}) : ``}</div>
+        ${description ? `<p>${escape(description)}</p>` : ``}</div>` : ``}
+    ${$$slots["button"] ? `<div class="button">${slots.button ? slots.button({}) : ``}</div>` : ``}</div>
+  <div class="content-area svelte-1snaw8w">${slots.default ? slots.default({}) : ``}</div>
 </section>`;
 });
 export {

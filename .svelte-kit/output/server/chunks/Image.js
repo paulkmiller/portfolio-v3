@@ -49,7 +49,7 @@ const Image = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   fileName = src.split(".")[0];
   return `<figure class="svelte-kkiy50"><img${add_attribute("srcset", buildSrcset(), 0)}${add_attribute("src", src, 0)}${add_attribute("alt", alt, 0)} loading="lazy" decoding="async" class="${["svelte-kkiy50", fullBleed ? "full-bleed" : ""].join(" ").trim()}"${add_styles({ width, height })}>
-	<figcaption class="svelte-kkiy50">${escape(alt)}</figcaption></figure>`;
+  <figcaption class="svelte-kkiy50">${escape(alt)}</figcaption></figure>`;
 });
 export {
   Image as I

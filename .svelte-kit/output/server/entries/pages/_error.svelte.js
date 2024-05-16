@@ -11,10 +11,12 @@ const Error_1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `${validate_component(Header, "Header").$$render($$result, { showBackground: true }, {}, {})}
 <main><div class="error-page svelte-1ezp2f5"><div class="container svelte-1ezp2f5"><h1>Oh no!</h1>
-			<div class="svg-wrapper svelte-1ezp2f5">${validate_component(Error, "Error").$$render($$result, {}, {}, {})}</div>
-			<p>It seems like coffee was spilled all over this page, and now it can&#39;t be displayed.</p>
-			<br>
-			${validate_component(Button, "Button").$$render($$result, { href: "/" }, {}, {
+      <div class="svg-wrapper svelte-1ezp2f5">${validate_component(Error, "Error").$$render($$result, {}, {}, {})}</div>
+      <p>It seems like coffee was spilled all over this page, and now it can&#39;t be
+        displayed.
+      </p>
+      <br>
+      ${validate_component(Button, "Button").$$render($$result, { href: "/" }, {}, {
     default: () => {
       return `Start over`;
     }

@@ -65,37 +65,37 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       }
     }
   }
-  return `${$$result.head += `<!-- HEAD_svelte-1ylu8nc_START -->${post ? `<meta name="keywords"${add_attribute("content", metaKeywords.join(", "), 0)}>
+  return `${$$result.head += `<!-- HEAD_svelte-1korl84_START -->${post ? `<meta name="keywords"${add_attribute("content", metaKeywords.join(", "), 0)}>
 
-		<meta name="description"${add_attribute("content", post.excerpt, 0)}>
-		<meta property="og:description"${add_attribute("content", post.excerpt, 0)}>
-		<meta name="twitter:description"${add_attribute("content", post.excerpt, 0)}>
-		<link rel="canonical" href="${escape(siteBaseUrl, true) + "/" + escape(post.slug, true)}">
+    <meta name="description"${add_attribute("content", post.excerpt, 0)}>
+    <meta property="og:description"${add_attribute("content", post.excerpt, 0)}>
+    <meta name="twitter:description"${add_attribute("content", post.excerpt, 0)}>
+    <link rel="canonical" href="${escape(siteBaseUrl, true) + "/" + escape(post.slug, true)}">
 
-		${$$result.title = `<title>${escape(post.title)} - ${escape(title)}</title>`, ""}
-		<meta property="og:title" content="${escape(post.title, true) + " - " + escape(title, true)}">
-		<meta name="twitter:title" content="${escape(post.title, true) + " - " + escape(title, true)}">
+    ${$$result.title = `<title>${escape(post.title)} - ${escape(title)}</title>`, ""}
+    <meta property="og:title" content="${escape(post.title, true) + " - " + escape(title, true)}">
+    <meta name="twitter:title" content="${escape(post.title, true) + " - " + escape(title, true)}">
 
-		${post.coverImage ? `<meta property="og:image" content="${escape(siteBaseUrl, true) + escape(post.coverImage, true)}">
-			<meta name="twitter:image" content="${escape(siteBaseUrl, true) + escape(post.coverImage, true)}">` : ``}` : ``}<!-- HEAD_svelte-1ylu8nc_END -->`, ""}
+    ${post.coverImage ? `<meta property="og:image" content="${escape(siteBaseUrl, true) + escape(post.coverImage, true)}">
+      <meta name="twitter:image" content="${escape(siteBaseUrl, true) + escape(post.coverImage, true)}">` : ``}` : ``}<!-- HEAD_svelte-1korl84_END -->`, ""}
 
 
 <div class="article-layout svelte-g9egsy">${validate_component(Header, "Header").$$render($$result, { showBackground: true }, {}, {})}
-	<main><article id="article-content" class="svelte-g9egsy"><div class="header svelte-g9egsy">${post ? `<h1>${escape(post.title)}</h1>
-					<div class="note svelte-g9egsy">Published on ${escape(dateformat(post.date, "UTC:dd mmmm yyyy"))}</div>
-					${post.updated ? `<div class="note svelte-g9egsy">Updated on ${escape(dateformat(post.updated, "UTC:dd mmmm yyyy"))}</div>` : ``}
-					${post.readingTime ? `<div class="note svelte-g9egsy">${escape(post.readingTime)}</div>` : ``}
-					${post.tags?.length ? `<div class="tags svelte-g9egsy">${each(post.tags, (tag) => {
+  <main><article id="article-content" class="svelte-g9egsy"><div class="header svelte-g9egsy">${post ? `<h1>${escape(post.title)}</h1>
+          <div class="note svelte-g9egsy">Published on ${escape(dateformat(post.date, "UTC:dd mmmm yyyy"))}</div>
+          ${post.updated ? `<div class="note svelte-g9egsy">Updated on ${escape(dateformat(post.updated, "UTC:dd mmmm yyyy"))}</div>` : ``}
+          ${post.readingTime ? `<div class="note svelte-g9egsy">${escape(post.readingTime)}</div>` : ``}
+          ${post.tags?.length ? `<div class="tags svelte-g9egsy">${each(post.tags, (tag) => {
     return `${validate_component(Tag, "Tag").$$render($$result, {}, {}, {
       default: () => {
         return `${escape(tag)}`;
       }
     })}`;
   })}</div>` : ``}` : ``}</div>
-			${post && post.coverImage ? `<div class="cover-image svelte-g9egsy">${validate_component(Image, "Image").$$render($$result, { src: post.coverImage, alt: post.title }, {}, {})}</div>` : ``}
-			<div class="content svelte-g9egsy">${slots.default ? slots.default({}) : ``}</div></article>
-		${post.relatedPosts && post.relatedPosts.length > 0 ? `<div class="container">${validate_component(RelatedPosts, "RelatedPosts").$$render($$result, { posts: post.relatedPosts }, {}, {})}</div>` : ``}</main>
-	${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}
+      ${post && post.coverImage ? `<div class="cover-image svelte-g9egsy">${validate_component(Image, "Image").$$render($$result, { src: post.coverImage, alt: post.title }, {}, {})}</div>` : ``}
+      <div class="content svelte-g9egsy">${slots.default ? slots.default({}) : ``}</div></article>
+    ${post.relatedPosts && post.relatedPosts.length > 0 ? `<div class="container">${validate_component(RelatedPosts, "RelatedPosts").$$render($$result, { posts: post.relatedPosts }, {}, {})}</div>` : ``}</main>
+  ${validate_component(Footer, "Footer").$$render($$result, {}, {}, {})}
 </div>`;
 });
 export {

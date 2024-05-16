@@ -133,26 +133,7 @@ const options = {
   root: Root,
   service_worker: false,
   templates: {
-    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n\n		<!-- Favicon -->\n		<link\n			rel="apple-touch-icon"\n			sizes="180x180"\n			href="' + assets2 + '/favicons/apple-touch-icon.png"\n		/>\n		<link\n			rel="icon"\n			type="image/png"\n			sizes="32x32"\n			href="' + assets2 + '/favicons/favicon-32x32.png"\n		/>\n		<link\n			rel="icon"\n			type="image/png"\n			sizes="16x16"\n			href="' + assets2 + '/favicons/favicon-16x16.png"\n		/>\n		<link rel="manifest" href="' + assets2 + '/favicons/site.webmanifest" />\n		<link\n			rel="mask-icon"\n			href="' + assets2 + '/favicons/safari-pinned-tab.svg"\n			color="#0ca4a5"\n		/>\n		<link rel="shortcut icon" href="' + assets2 + '/favicons/favicon.ico" />\n		<link rel="icon" href="' + assets2 + `/favicons/favicon.png" />
-
-		<!-- Tell browser this site is responsive -->
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!-- Tell browser this site supports light and dark mode -->
-		<meta name="color-scheme" content="light dark" />
-		<!-- Color for browser url bar in mobile/Safari -->
-		<meta name="theme-color" media="(prefers-color-scheme: light)" content="#b28cf2" />
-		<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#4612A1" />
-		<!-- Disable Google FLOC -->
-		<meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
-
-		<script>
-			// Calling this here so that it loads as quickly as possible
-			// Avoiding a flash of light mode in case dark mode is used
-			const theme = localStorage.getItem('theme-preference') || 'auto';
-			document.firstElementChild?.setAttribute('data-theme', theme);
-		<\/script>
-
-		` + head + '\n	</head>\n	<body data-sveltekit-preload-data="hover">\n		<div id="svelte-root">' + body + "</div>\n	</body>\n</html>\n",
+    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en">\n  <head>\n    <meta charset="utf-8" />\n\n    <!-- Favicon -->\n    <link\n      rel="apple-touch-icon"\n      sizes="180x180"\n      href="' + assets2 + '/favicons/apple-touch-icon.png"\n    />\n    <link\n      rel="icon"\n      type="image/png"\n      sizes="32x32"\n      href="' + assets2 + '/favicons/favicon-32x32.png"\n    />\n    <link\n      rel="icon"\n      type="image/png"\n      sizes="16x16"\n      href="' + assets2 + '/favicons/favicon-16x16.png"\n    />\n    <link rel="manifest" href="' + assets2 + '/favicons/site.webmanifest" />\n    <link\n      rel="mask-icon"\n      href="' + assets2 + '/favicons/safari-pinned-tab.svg"\n      color="#0ca4a5"\n    />\n    <link rel="shortcut icon" href="' + assets2 + '/favicons/favicon.ico" />\n    <link rel="icon" href="' + assets2 + '/favicons/favicon.png" />\n\n    <!-- Tell browser this site is responsive -->\n    <meta name="viewport" content="width=device-width, initial-scale=1" />\n    <!-- Tell browser this site supports light and dark mode -->\n    <meta name="color-scheme" content="light dark" />\n    <!-- Color for browser url bar in mobile/Safari -->\n    <meta\n      name="theme-color"\n      media="(prefers-color-scheme: light)"\n      content="#b28cf2"\n    />\n    <meta\n      name="theme-color"\n      media="(prefers-color-scheme: dark)"\n      content="#4612A1"\n    />\n    <!-- Disable Google FLOC -->\n    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />\n\n    <script>\n      // Calling this here so that it loads as quickly as possible\n      // Avoiding a flash of light mode in case dark mode is used\n      const theme = localStorage.getItem("theme-preference") || "auto";\n      document.firstElementChild?.setAttribute("data-theme", theme);\n    <\/script>\n\n    ' + head + '\n  </head>\n  <body data-sveltekit-preload-data="hover">\n    <div id="svelte-root">' + body + "</div>\n  </body>\n</html>\n",
     error: ({ status, message }) => '<!doctype html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -224,7 +205,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "rsjvlm"
+  version_hash: "1qbdp06"
 };
 function get_hooks() {
   return {};

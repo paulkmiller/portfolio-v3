@@ -42,7 +42,10 @@ const xml = (posts) => `
           <title>${post.title}</title>
           <description>${post.excerpt}</description>
           <link>${siteBaseUrl}/${post.slug}</link>
-          <pubDate>${dateformat(post.date, "ddd, dd mmm yyyy HH:MM:ss o")}</pubDate>
+          <pubDate>${dateformat(
+    post.date,
+    "ddd, dd mmm yyyy HH:MM:ss o"
+  )}</pubDate>
           ${post.tags ? post.tags.map((tag) => `<category>${tag}</category>`).join("") : ""}
           <content:encoded><![CDATA[
             <div style="margin: 50px 0; font-style: italic;">
