@@ -1,1 +1,4 @@
-{"static":{"images":{"projects":{},"posts":{}},"favicons":{}},".svelte-kit":{"output":{"client":{"images":{"posts":{}}}}}}
+{
+  "static": { "images": { "projects": {}, "posts": {} }, "favicons": {} },
+  ".svelte-kit": { "output": { "client": { "images": { "posts": {} } } } }
+}

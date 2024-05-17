@@ -1,18 +1,19 @@
 import { c as create_ssr_component } from "./index2.js";
 const metadata = {
-  "slug": "steamdeck-modded-fallout4",
-  "title": "Installing Fallout 4 A StoryWealth Collection on Steam Deck",
-  "date": "2023-04-22T21:55:27.154Z",
-  "excerpt": "How to add the most popular collection on Nexusmods for Fallout 4 to your Steamdeck",
-  "coverImage": "/images/posts/steamdeckfallout4.webp",
-  "tags": [
+  slug: "steamdeck-modded-fallout4",
+  title: "Installing Fallout 4 A StoryWealth Collection on Steam Deck",
+  date: "2023-04-22T21:55:27.154Z",
+  excerpt:
+    "How to add the most popular collection on Nexusmods for Fallout 4 to your Steamdeck",
+  coverImage: "/images/posts/steamdeckfallout4.webp",
+  tags: [
     "Documentation",
     "Steam Deck",
     "Fallout 4",
     "A StoryWealth Collection",
-    "NexusMods"
+    "NexusMods",
   ],
-  "hidden": false
+  hidden: false,
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<p>Welcome, fellow Wasteland Hombres! This guide will walk you through the process of installing the most endorsed Collection for Fallout 4 on Nexusmods: Fallout 4: A StoryWealth. Let’s get started!</p>
@@ -35,13 +36,15 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 <li><p>If everything went smoothly, run Fallout 4 from Steam, either through the app or by running the “Return to Gaming Mode” shortcut and launching Fallout 4 from the normal Steam Deck interface.</p></li></ol>
 <p>Congratulations! You’re now ready to embark on your Fallout 4: A StoryWealth adventure on your Steam Deck. Have fun, fellow Steamdeck users!</p>`;
 });
-const __vite_glob_0_1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  default: Page,
-  metadata
-}, Symbol.toStringTag, { value: "Module" }));
-export {
-  Page as P,
-  __vite_glob_0_1 as _,
-  metadata as m
-};
+const __vite_glob_0_1 = /* @__PURE__ */ Object.freeze(
+  /* @__PURE__ */ Object.defineProperty(
+    {
+      __proto__: null,
+      default: Page,
+      metadata,
+    },
+    Symbol.toStringTag,
+    { value: "Module" }
+  )
+);
+export { Page as P, __vite_glob_0_1 as _, metadata as m };

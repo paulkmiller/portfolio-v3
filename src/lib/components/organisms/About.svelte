@@ -8,7 +8,7 @@
   <div class="text">
     <!-- <h2>Hello!</h2> -->
     <p>
-      Hey there! I'm Paul, a frontend developer who loves bringing designs to
+      Hi, I'm Paul, a seasoned Front End Developer who loves bringing designs to
       life through code. There's nothing quite like the thrill of transforming a
       static mockup into an interactive, engaging experience that users can
       enjoy.
@@ -21,9 +21,9 @@
       Contentful.
     </p>
     <p>
-      If you're looking for a frontend developer who's equal parts creative and
+      If you're looking for a Front End Developer who's equal parts creative and
       technical, I'd love to chat. Feel free to check out my blog if you want to
-      see what I'm up too! And if you've got a design that you're dying to see
+      see what I'm up to! And if you've got a design that you're dying to see
       brought to life, let's definitely talk!
     </p>
   </div>
