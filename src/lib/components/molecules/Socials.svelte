@@ -4,17 +4,19 @@
   import LinkedInIcon from "$lib/icons/socials/linkedin.svelte";
   import EmailIcon from "$lib/icons/socials/email.svelte";
   import RssIcon from "$lib/icons/rss.svelte";
-  import MastodonIcon from "$lib/icons/socials/mastodon.svelte";
+  import CodepenIcon from "$lib/icons/socials/codepen.svelte";
+  import InstagramIcon from "$lib/icons/socials/instagram.svelte";
+
 </script>
 
 <div class="socials">
   <a
-    href="https://mastodon.social/@PaulMiller"
+    href="https://codepen.io/paulkmiller"
     target="_blank"
-    rel="me noreferrer"
-    title="Say Hi on Mastodon"
+    rel="noopener noreferrer"
+    title="See my Codepen profile"
   >
-    <MastodonIcon />
+    <CodepenIcon />
   </a>
   <a
     href="https://github.com/paulkmiller"
@@ -31,6 +33,14 @@
     title="Connect on LinkedIn"
   >
     <LinkedInIcon />
+  </a>
+  <a
+    href="https://www.instagram.com/obewan_kanobi/"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="Connect on Instagram"
+  >
+    <InstagramIcon />
   </a>
   <a
     href="mailto:paulkerrymiller@gmail.com"

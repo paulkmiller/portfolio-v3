@@ -11,7 +11,7 @@
     el.scrollIntoView(true);
   }
 
-  $: tip = "Probably getting my butt kicked 🙃";
+  $: tip = "I move often, so check my Insta!";
 </script>
 
 <section id="hero">
@@ -24,13 +24,18 @@
       >
     </h2>
     <p>
+      Bringing Designs to Life <span class="secondary">&</span>
+      probably playing<br /> <a href="https://steamcommunity.com/id/Kahram/" target="_blank">games</a>, <Tooltip {tip}><a href="https://www.instagram.com/obewan_kanobi/" target="_blank">exploring the area</a></Tooltip>, 
+      or petting my cats.
+    </p>
+    <!-- <p>
       Bringing Designs to Life <span class="secondary">&</span><br />
       Probably playing <Tooltip {tip}
         ><a href="https://steamcommunity.com/id/Kahram/" target="_blank"
           >games</a
         ></Tooltip
       > or petting my cats.
-    </p>
+    </p> -->
     <div class="socials">
       <span>Socials:</span>
       <Socials />
