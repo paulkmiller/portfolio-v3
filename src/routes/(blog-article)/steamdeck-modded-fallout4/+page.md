@@ -13,7 +13,7 @@ tags:
 hidden: false
 ---
 
-Welcome, fellow Wasteland Hombres! This guide will walk you through the process of installing the most endorsed Collection for Fallout 4 on Nexusmods: Fallout 4: A StoryWealth. Let's get started!
+Welcome, fellow Wasteland Hombres! This guide will walk you through the process of installing the most endorsed Collection for Fallout 4 on Nexusmods: [Fallout 4: A StoryWealth](https://www.nexusmods.com/fallout4/articles/3375/). Let's get started!
 
 ## Prerequisites
 
