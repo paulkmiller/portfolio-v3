@@ -129,13 +129,6 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-      to bottom,
-      rgba(28, 30, 38, 1),
-      rgba(28, 30, 38, 0) 20%,
-      rgba(28, 30, 38, 0) 80%,
-      rgba(28, 30, 38, 1)
-    );
     transform: translateY(-100px);
     @include for-phone-only {
       transform: translateY(0px);
