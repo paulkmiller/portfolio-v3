@@ -1,2 +1,1 @@
-const t = /^((http|https):\/\/)/;
-export { t as H };
+const t=/^((http|https):\/\/)/;export{t as H};

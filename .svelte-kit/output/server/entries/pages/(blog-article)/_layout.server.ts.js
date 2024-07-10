@@ -4,7 +4,9 @@ async function load({ url }) {
   const slug = pathname.replace("/", "");
   const post = filteredPosts.find((post2) => post2.slug === slug);
   return {
-    post,
+    post
   };
 }
-export { load };
+export {
+  load
+};

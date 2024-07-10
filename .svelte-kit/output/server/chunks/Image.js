@@ -1,13 +1,8 @@
-import {
-  c as create_ssr_component,
-  a as add_attribute,
-  g as add_styles,
-  b as escape,
-} from "./index2.js";
+import { c as create_ssr_component, a as add_attribute, g as add_styles, b as escape } from "./index2.js";
 const Image_svelte_svelte_type_style_lang = "";
 const css = {
   code: "figure.svelte-kkiy50{height:100%;width:100%;display:inline-block}img.svelte-kkiy50{width:100%;height:100%;object-fit:contain}figcaption.svelte-kkiy50{text-align:center;font-size:0.9rem;margin:0.5rem}",
-  map: null,
+  map: null
 };
 const Image = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let fileName;
@@ -41,11 +36,7 @@ const Image = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.src(src);
   if ($$props.alt === void 0 && $$bindings.alt && alt !== void 0)
     $$bindings.alt(alt);
-  if (
-    $$props.fullBleed === void 0 &&
-    $$bindings.fullBleed &&
-    fullBleed !== void 0
-  )
+  if ($$props.fullBleed === void 0 && $$bindings.fullBleed && fullBleed !== void 0)
     $$bindings.fullBleed(fullBleed);
   if ($$props.width === void 0 && $$bindings.width && width !== void 0)
     $$bindings.width(width);
@@ -57,20 +48,9 @@ const Image = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.widths(widths);
   $$result.css.add(css);
   fileName = src.split(".")[0];
-  return `<figure class="svelte-kkiy50"><img${add_attribute(
-    "srcset",
-    buildSrcset(),
-    0
-  )}${add_attribute("src", src, 0)}${add_attribute(
-    "alt",
-    alt,
-    0
-  )} loading="lazy" decoding="async" class="${[
-    "svelte-kkiy50",
-    fullBleed ? "full-bleed" : "",
-  ]
-    .join(" ")
-    .trim()}"${add_styles({ width, height })}>
+  return `<figure class="svelte-kkiy50"><img${add_attribute("srcset", buildSrcset(), 0)}${add_attribute("src", src, 0)}${add_attribute("alt", alt, 0)} loading="lazy" decoding="async" class="${["svelte-kkiy50", fullBleed ? "full-bleed" : ""].join(" ").trim()}"${add_styles({ width, height })}>
   <figcaption class="svelte-kkiy50">${escape(alt)}</figcaption></figure>`;
 });
-export { Image as I };
+export {
+  Image as I
+};

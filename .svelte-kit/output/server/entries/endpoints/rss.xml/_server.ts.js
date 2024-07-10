@@ -1,8 +1,4 @@
-import {
-  s as siteBaseUrl,
-  t as title,
-  d as description,
-} from "../../../chunks/meta.js";
+import { s as siteBaseUrl, t as title, d as description } from "../../../chunks/meta.js";
 import dateformat from "dateformat";
 import { i as importPosts, f as filterPosts } from "../../../chunks/utils.js";
 const prerender = true;
@@ -12,7 +8,7 @@ async function GET() {
   const body = xml(filteredPosts);
   const headers = {
     "Cache-Control": "max-age=0, s-maxage=3600",
-    "Content-Type": "application/xml",
+    "Content-Type": "application/xml"
   };
   return new Response(body, { headers });
 }
@@ -39,23 +35,18 @@ const xml = (posts) => `
       <width>32</width>
       <height>32</height>
     </image>
-    ${posts
-      .map(
-        (post) => `
+    ${posts.map(
+  (post) => `
         <item>
           <guid>${siteBaseUrl}/${post.slug}</guid>
           <title>${post.title}</title>
           <description>${post.excerpt}</description>
           <link>${siteBaseUrl}/${post.slug}</link>
           <pubDate>${dateformat(
-            post.date,
-            "ddd, dd mmm yyyy HH:MM:ss o"
-          )}</pubDate>
-          ${
-            post.tags
-              ? post.tags.map((tag) => `<category>${tag}</category>`).join("")
-              : ""
-          }
+    post.date,
+    "ddd, dd mmm yyyy HH:MM:ss o"
+  )}</pubDate>
+          ${post.tags ? post.tags.map((tag) => `<category>${tag}</category>`).join("") : ""}
           <content:encoded><![CDATA[
             <div style="margin: 50px 0; font-style: italic;">
               If anything looks wrong, 
@@ -68,20 +59,14 @@ const xml = (posts) => `
 
             ${post.html}
           ]]></content:encoded>
-          ${
-            post.coverImage
-              ? `<media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="${siteBaseUrl}/${post.coverImage}"/>`
-              : ""
-          }
-          ${
-            post.coverImage
-              ? `<media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="${siteBaseUrl}/${post.coverImage}"/>`
-              : ""
-          }          
+          ${post.coverImage ? `<media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="${siteBaseUrl}/${post.coverImage}"/>` : ""}
+          ${post.coverImage ? `<media:content xmlns:media="http://search.yahoo.com/mrss/" medium="image" url="${siteBaseUrl}/${post.coverImage}"/>` : ""}          
         </item>
       `
-      )
-      .join("")}
+).join("")}
   </channel>
 </rss>`;
-export { GET, prerender };
+export {
+  GET,
+  prerender
+};

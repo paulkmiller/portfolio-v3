@@ -1,22 +1,21 @@
 import { c as create_ssr_component } from "./index2.js";
 const metadata = {
-  slug: "steamdeck-modded-fallout4",
-  title: "Installing Fallout 4 A StoryWealth Collection on Steam Deck",
-  date: "2023-04-22T21:55:27.154Z",
-  excerpt:
-    "How to add the most popular collection on Nexusmods for Fallout 4 to your Steamdeck",
-  coverImage: "/images/posts/steamdeckfallout4.webp",
-  tags: [
+  "slug": "steamdeck-modded-fallout4",
+  "title": "Installing Fallout 4 A StoryWealth Collection on Steam Deck",
+  "date": "2023-04-22T21:55:27.154Z",
+  "excerpt": "How to add the most popular collection on Nexusmods for Fallout 4 to your Steamdeck",
+  "coverImage": "/images/posts/steamdeckfallout4.webp",
+  "tags": [
     "Documentation",
     "Steam Deck",
     "Fallout 4",
     "A StoryWealth Collection",
-    "NexusMods",
+    "NexusMods"
   ],
-  hidden: false,
+  "hidden": false
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<p>Welcome, fellow Wasteland Hombres! This guide will walk you through the process of installing the most endorsed Collection for Fallout 4 on Nexusmods: Fallout 4: A StoryWealth. Let’s get started!</p>
+  return `<p>Welcome, fellow Wasteland Hombres! This guide will walk you through the process of installing the most endorsed Collection for Fallout 4 on Nexusmods: <a href="https://www.nexusmods.com/fallout4/articles/3375/" rel="nofollow">Fallout 4: A StoryWealth</a>. Let’s get started!</p>
 <h2 id="prerequisites"><a class="heading-link" title="Permalink" aria-hidden="true" href="#prerequisites"><span>#</span></a>Prerequisites</h2>
 <p>Before we begin, please note that on April 25th, a big next-gen Fallout 4 Update will be released. To avoid updates ruining your mod collections, please refer to <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" rel="nofollow">this video</a> on how to disable Steam updates for specific titles.</p>
 <ol><li><p>Install a clean copy of Fallout 4 without the HD pack DLC, and run it once to configure all folders and ini files. You don’t need to start a new game at this point.</p></li>
@@ -36,15 +35,13 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 <li><p>If everything went smoothly, run Fallout 4 from Steam, either through the app or by running the “Return to Gaming Mode” shortcut and launching Fallout 4 from the normal Steam Deck interface.</p></li></ol>
 <p>Congratulations! You’re now ready to embark on your Fallout 4: A StoryWealth adventure on your Steam Deck. Have fun, fellow Steamdeck users!</p>`;
 });
-const __vite_glob_0_1 = /* @__PURE__ */ Object.freeze(
-  /* @__PURE__ */ Object.defineProperty(
-    {
-      __proto__: null,
-      default: Page,
-      metadata,
-    },
-    Symbol.toStringTag,
-    { value: "Module" }
-  )
-);
-export { Page as P, __vite_glob_0_1 as _, metadata as m };
+const __vite_glob_0_1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  default: Page,
+  metadata
+}, Symbol.toStringTag, { value: "Module" }));
+export {
+  Page as P,
+  __vite_glob_0_1 as _,
+  metadata as m
+};
