@@ -9,10 +9,10 @@ const Email = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<svg width="100%" height="100%" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 9L12 12.5L17 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2 17V7C2 5.89543 2.89543 5 4 5H20C21.1046 5 22 5.89543 22 7V17C22 18.1046 21.1046 19 20 19H4C2.89543 19 2 18.1046 2 17Z" stroke="currentColor" stroke-width="1.5"></path></svg>`;
 });
 const Codepen = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke-width="1.5" color="#fff"><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M21 9v6M3 15V9M12 21v-6M12 3v6M12 15 3 9l9-6 9 6-9 6Z"></path><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="m12 21-9-6 9-6 9 6-9 6Z"></path></svg>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke-width="1.5" color="currentColor"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M21 9v6M3 15V9M12 21v-6M12 3v6M12 15 3 9l9-6 9 6-9 6Z"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m12 21-9-6 9-6 9 6-9 6Z"></path></svg>`;
 });
 const Instagram = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke-width="1.5" color="#fff"><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"></path><path stroke="#fff" d="M3 16V8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5Z"></path><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="m17.5 6.51.01-.011"></path></svg>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke-width="1.5" color="currentColor"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"></path><path stroke="currentColor" d="M3 16V8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5Z"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m17.5 6.51.01-.011"></path></svg>`;
 });
 const Socials_svelte_svelte_type_style_lang = "";
 const css = {

@@ -1,6 +1,6 @@
-import { c as create_ssr_component, d as subscribe, a as add_attribute, v as validate_component } from "./index2.js";
-import { S as Socials } from "./Socials.js";
+import { c as create_ssr_component, g as subscribe, a as add_attribute, v as validate_component } from "./index2.js";
 import { w as writable } from "./index.js";
+import { S as Socials } from "./Socials.js";
 const Logo_svelte_svelte_type_style_lang = "";
 const css$4 = {
   code: ".logo.svelte-qu2viy.svelte-qu2viy{width:auto;height:100%;display:flex;gap:16px;align-items:center}@media(max-width: 767px){.logo.svelte-qu2viy.svelte-qu2viy{gap:8px}}.logo.svelte-qu2viy #logo-text.svelte-qu2viy{width:auto;height:100%;max-height:28px}.logo.svelte-qu2viy #logo-text #text.svelte-qu2viy{transition:all 0.2s ease-in-out;fill:var(--color--text)}.logo.svelte-qu2viy:hover #logo-text.svelte-qu2viy{filter:drop-shadow(0px 0px 3px var(--color--primary))}@media screen and (prefers-reduced-motion: no-preference){.animated.svelte-qu2viy #text.svelte-qu2viy{animation:svg-text-stroke 3s;stroke-width:2;--text-color:var(--color--text)}}",
@@ -89,9 +89,7 @@ const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   <div class="content svelte-ihsxy7"><div class="credits svelte-ihsxy7">Site powered by <a href="https://kit.svelte.dev/" class="svelte-ihsxy7">Svelte</a>,
       <a href="https://iconoir.com/" class="svelte-ihsxy7">Iconoir</a> and ☕
     </div>
-    <div class="socials svelte-ihsxy7">${validate_component(Socials, "Socials").$$render($$result, {}, {}, {})}
-      ${validate_component(RssLink, "RssLink").$$render($$result, {}, {}, {})}
-      ${validate_component(ThemeToggle, "ThemeToggle").$$render($$result, {}, {}, {})}</div></div>
+    <div class="socials svelte-ihsxy7">${validate_component(Socials, "Socials").$$render($$result, {}, {}, {})}</div></div>
 </footer>`;
 });
 export {

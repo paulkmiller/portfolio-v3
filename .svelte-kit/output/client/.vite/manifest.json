@@ -11,16 +11,12 @@
       ".svelte-kit/generated/client-optimized/nodes/7.js",
       ".svelte-kit/generated/client-optimized/nodes/8.js"
     ],
-    "file": "_app/immutable/entry/app.1399ec90.js",
+    "file": "_app/immutable/entry/app.805f5df8.js",
     "imports": [
-      "_index.c7992fe2.js"
+      "_index.b223fad9.js"
     ],
     "isEntry": true,
     "src": ".svelte-kit/generated/client-optimized/app.js"
-  },
-  ".svelte-kit/generated/client-optimized/nodes/0.css": {
-    "file": "_app/immutable/assets/0.97c9b108.css",
-    "src": ".svelte-kit/generated/client-optimized/nodes/0.css"
   },
   ".svelte-kit/generated/client-optimized/nodes/0.js": {
     "assets": [
@@ -66,11 +62,11 @@
       "_app/immutable/assets/ubuntu-mono-latin-400-normal.b07e4ebe.woff2"
     ],
     "css": [
-      "_app/immutable/assets/0.97c9b108.css"
+      "_app/immutable/assets/global.4f035ebe.css"
     ],
-    "file": "_app/immutable/nodes/0.44738e89.js",
+    "file": "_app/immutable/nodes/0.0d45223c.js",
     "imports": [
-      "_index.c7992fe2.js"
+      "_index.b223fad9.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -84,12 +80,12 @@
     "css": [
       "_app/immutable/assets/1.e3eb7d9c.css"
     ],
-    "file": "_app/immutable/nodes/1.8a93204c.js",
+    "file": "_app/immutable/nodes/1.73eac238.js",
     "imports": [
-      "_index.c7992fe2.js",
-      "_Footer.a2ce99ed.js",
-      "_Button.6162fbd1.js",
-      "_error.b7fe2859.js"
+      "_index.b223fad9.js",
+      "_Footer.0a734fda.js",
+      "_Button.e6163b12.js",
+      "_error.4c0fbd35.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -103,30 +99,73 @@
     "css": [
       "_app/immutable/assets/2.5095858c.css"
     ],
-    "file": "_app/immutable/nodes/2.34ab84b1.js",
+    "file": "_app/immutable/nodes/2.d5fd6cef.js",
     "imports": [
-      "_index.c7992fe2.js",
-      "_Footer.a2ce99ed.js",
-      "_ContentSection.02ad503a.js",
+      "_index.b223fad9.js",
+      "_Footer.0a734fda.js",
+      "_ContentSection.2f093d03.js",
       "_meta.b74a4754.js",
-      "_Image.f2f50b72.js"
+      "_Image.85b924aa.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
     "src": ".svelte-kit/generated/client-optimized/nodes/2.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/3.css": {
-    "file": "_app/immutable/assets/3.4c4b0438.css",
+    "file": "_app/immutable/assets/3.34aae8d3.css",
     "src": ".svelte-kit/generated/client-optimized/nodes/3.css"
   },
   ".svelte-kit/generated/client-optimized/nodes/3.js": {
-    "css": [
-      "_app/immutable/assets/3.4c4b0438.css"
+    "assets": [
+      "_app/immutable/assets/inter-cyrillic-ext-600-normal.2ea11f8c.woff2",
+      "_app/immutable/assets/inter-all-600-normal.ba29c057.woff",
+      "_app/immutable/assets/inter-cyrillic-600-normal.9bc492f5.woff2",
+      "_app/immutable/assets/inter-greek-ext-600-normal.c37a11b3.woff2",
+      "_app/immutable/assets/inter-greek-600-normal.4591e350.woff2",
+      "_app/immutable/assets/inter-latin-ext-600-normal.cc23fe6f.woff2",
+      "_app/immutable/assets/inter-latin-600-normal.048d136d.woff2",
+      "_app/immutable/assets/inter-cyrillic-ext-700-normal.b7bb121f.woff2",
+      "_app/immutable/assets/inter-all-700-normal.9d318ccb.woff",
+      "_app/immutable/assets/inter-cyrillic-700-normal.f6c6dcaf.woff2",
+      "_app/immutable/assets/inter-greek-ext-700-normal.22174f43.woff2",
+      "_app/immutable/assets/inter-greek-700-normal.9e078f49.woff2",
+      "_app/immutable/assets/inter-latin-ext-700-normal.1cc47d25.woff2",
+      "_app/immutable/assets/inter-latin-700-normal.ced2d8e0.woff2",
+      "_app/immutable/assets/merriweather-cyrillic-ext-900-normal.6e0494cc.woff2",
+      "_app/immutable/assets/merriweather-all-900-normal.5bad16cd.woff",
+      "_app/immutable/assets/merriweather-cyrillic-900-normal.1158e068.woff2",
+      "_app/immutable/assets/merriweather-vietnamese-900-normal.f35d0882.woff2",
+      "_app/immutable/assets/merriweather-latin-ext-900-normal.e8e31be0.woff2",
+      "_app/immutable/assets/merriweather-latin-900-normal.f6b9eebb.woff2",
+      "_app/immutable/assets/inter-cyrillic-ext-400-normal.f7666a51.woff2",
+      "_app/immutable/assets/inter-all-400-normal.f824029b.woff",
+      "_app/immutable/assets/inter-cyrillic-400-normal.e9493683.woff2",
+      "_app/immutable/assets/inter-greek-ext-400-normal.d3e30cde.woff2",
+      "_app/immutable/assets/inter-greek-400-normal.2f2d421a.woff2",
+      "_app/immutable/assets/inter-latin-ext-400-normal.64a98f58.woff2",
+      "_app/immutable/assets/inter-latin-400-normal.0364d368.woff2",
+      "_app/immutable/assets/merriweather-cyrillic-ext-400-normal.4c548257.woff2",
+      "_app/immutable/assets/merriweather-all-400-normal.d13ad951.woff",
+      "_app/immutable/assets/merriweather-cyrillic-400-normal.c46bbc4f.woff2",
+      "_app/immutable/assets/merriweather-vietnamese-400-normal.880fc37f.woff2",
+      "_app/immutable/assets/merriweather-latin-ext-400-normal.9e26ab50.woff2",
+      "_app/immutable/assets/merriweather-latin-400-normal.5c2d662e.woff2",
+      "_app/immutable/assets/ubuntu-mono-cyrillic-ext-400-normal.fcf55b87.woff2",
+      "_app/immutable/assets/ubuntu-mono-all-400-normal.f4a8f91f.woff",
+      "_app/immutable/assets/ubuntu-mono-cyrillic-400-normal.b958f4d0.woff2",
+      "_app/immutable/assets/ubuntu-mono-greek-ext-400-normal.8b0abaf5.woff2",
+      "_app/immutable/assets/ubuntu-mono-greek-400-normal.6799188f.woff2",
+      "_app/immutable/assets/ubuntu-mono-latin-ext-400-normal.1fe80c26.woff2",
+      "_app/immutable/assets/ubuntu-mono-latin-400-normal.b07e4ebe.woff2"
     ],
-    "file": "_app/immutable/nodes/3.6e963fd2.js",
+    "css": [
+      "_app/immutable/assets/3.34aae8d3.css",
+      "_app/immutable/assets/global.4f035ebe.css"
+    ],
+    "file": "_app/immutable/nodes/3.c4dffb24.js",
     "imports": [
-      "_index.c7992fe2.js",
-      "_Footer.a2ce99ed.js",
+      "_index.b223fad9.js",
+      "_Footer.0a734fda.js",
       "_meta.b74a4754.js"
     ],
     "isDynamicEntry": true,
@@ -141,39 +180,39 @@
     "css": [
       "_app/immutable/assets/4.2ac225e0.css"
     ],
-    "file": "_app/immutable/nodes/4.ee339d33.js",
+    "file": "_app/immutable/nodes/4.5859cb52.js",
     "imports": [
-      "_index.c7992fe2.js",
-      "_Image.f2f50b72.js"
+      "_index.b223fad9.js",
+      "_Image.85b924aa.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
     "src": ".svelte-kit/generated/client-optimized/nodes/4.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/5.js": {
-    "file": "_app/immutable/nodes/5.84cd01d2.js",
+    "file": "_app/immutable/nodes/5.ec011f86.js",
     "imports": [
-      "_index.c7992fe2.js"
+      "_index.b223fad9.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
     "src": ".svelte-kit/generated/client-optimized/nodes/5.js"
   },
   ".svelte-kit/generated/client-optimized/nodes/6.css": {
-    "file": "_app/immutable/assets/6.64180b13.css",
+    "file": "_app/immutable/assets/6.7eabd38e.css",
     "src": ".svelte-kit/generated/client-optimized/nodes/6.css"
   },
   ".svelte-kit/generated/client-optimized/nodes/6.js": {
     "css": [
-      "_app/immutable/assets/6.64180b13.css"
+      "_app/immutable/assets/6.7eabd38e.css"
     ],
-    "file": "_app/immutable/nodes/6.b0166cf0.js",
+    "file": "_app/immutable/nodes/6.d504e852.js",
     "imports": [
-      "_index.c7992fe2.js",
-      "_Socials.68c63932.js",
-      "_Button.6162fbd1.js",
-      "_ContentSection.02ad503a.js",
-      "_Image.f2f50b72.js"
+      "_index.b223fad9.js",
+      "_Socials.0d56e50f.js",
+      "_Button.e6163b12.js",
+      "_ContentSection.2f093d03.js",
+      "_Image.85b924aa.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -187,11 +226,11 @@
     "css": [
       "_app/immutable/assets/7.a9d4fba1.css"
     ],
-    "file": "_app/immutable/nodes/7.ea5cea89.js",
+    "file": "_app/immutable/nodes/7.3d8120e7.js",
     "imports": [
-      "_index.c7992fe2.js",
-      "_Button.6162fbd1.js",
-      "_error.b7fe2859.js"
+      "_index.b223fad9.js",
+      "_Button.e6163b12.js",
+      "_error.4c0fbd35.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -205,10 +244,10 @@
     "css": [
       "_app/immutable/assets/8.bbabfa68.css"
     ],
-    "file": "_app/immutable/nodes/8.bc45bf92.js",
+    "file": "_app/immutable/nodes/8.b4f0bff4.js",
     "imports": [
-      "_index.c7992fe2.js",
-      "_ContentSection.02ad503a.js"
+      "_index.b223fad9.js",
+      "_ContentSection.2f093d03.js"
     ],
     "isDynamicEntry": true,
     "isEntry": true,
@@ -234,76 +273,80 @@
     "file": "_app/immutable/assets/Socials.1c0e54d1.css",
     "src": "Socials.css"
   },
-  "_Button.6162fbd1.js": {
+  "_Button.e6163b12.js": {
     "css": [
       "_app/immutable/assets/Button.b2541fdf.css"
     ],
-    "file": "_app/immutable/chunks/Button.6162fbd1.js",
+    "file": "_app/immutable/chunks/Button.e6163b12.js",
     "imports": [
-      "_index.c7992fe2.js",
+      "_index.b223fad9.js",
       "_regex.7dfa9b23.js"
     ]
   },
-  "_ContentSection.02ad503a.js": {
+  "_ContentSection.2f093d03.js": {
     "css": [
       "_app/immutable/assets/ContentSection.86f945e6.css"
     ],
-    "file": "_app/immutable/chunks/ContentSection.02ad503a.js",
+    "file": "_app/immutable/chunks/ContentSection.2f093d03.js",
     "imports": [
-      "_index.c7992fe2.js",
+      "_index.b223fad9.js",
       "_regex.7dfa9b23.js",
-      "_Image.f2f50b72.js"
+      "_Image.85b924aa.js"
     ]
   },
-  "_Footer.a2ce99ed.js": {
+  "_Footer.0a734fda.js": {
     "css": [
       "_app/immutable/assets/Footer.37da215a.css"
     ],
-    "file": "_app/immutable/chunks/Footer.a2ce99ed.js",
+    "file": "_app/immutable/chunks/Footer.0a734fda.js",
     "imports": [
-      "_index.c7992fe2.js",
-      "_Socials.68c63932.js",
-      "_index.12c3ab83.js"
+      "_index.b223fad9.js",
+      "_Socials.0d56e50f.js",
+      "_index.3f3d9422.js"
     ]
   },
-  "_Image.f2f50b72.js": {
+  "_Image.85b924aa.js": {
     "css": [
       "_app/immutable/assets/Image.c35dc37b.css"
     ],
-    "file": "_app/immutable/chunks/Image.f2f50b72.js",
+    "file": "_app/immutable/chunks/Image.85b924aa.js",
     "imports": [
-      "_index.c7992fe2.js"
+      "_index.b223fad9.js"
     ]
   },
-  "_Socials.68c63932.js": {
+  "_Socials.0d56e50f.js": {
     "css": [
       "_app/immutable/assets/Socials.1c0e54d1.css"
     ],
-    "file": "_app/immutable/chunks/Socials.68c63932.js",
+    "file": "_app/immutable/chunks/Socials.0d56e50f.js",
     "imports": [
-      "_index.c7992fe2.js"
+      "_index.b223fad9.js"
     ]
   },
-  "_error.b7fe2859.js": {
-    "file": "_app/immutable/chunks/error.b7fe2859.js",
+  "_error.4c0fbd35.js": {
+    "file": "_app/immutable/chunks/error.4c0fbd35.js",
     "imports": [
-      "_index.c7992fe2.js"
+      "_index.b223fad9.js"
     ]
   },
-  "_index.12c3ab83.js": {
-    "file": "_app/immutable/chunks/index.12c3ab83.js",
+  "_index.3f3d9422.js": {
+    "file": "_app/immutable/chunks/index.3f3d9422.js",
     "imports": [
-      "_index.c7992fe2.js"
+      "_index.b223fad9.js"
     ]
   },
-  "_index.c7992fe2.js": {
-    "file": "_app/immutable/chunks/index.c7992fe2.js"
+  "_index.b223fad9.js": {
+    "file": "_app/immutable/chunks/index.b223fad9.js"
   },
   "_meta.b74a4754.js": {
     "file": "_app/immutable/chunks/meta.b74a4754.js"
   },
   "_regex.7dfa9b23.js": {
     "file": "_app/immutable/chunks/regex.7dfa9b23.js"
+  },
+  "global.css": {
+    "file": "_app/immutable/assets/global.4f035ebe.css",
+    "src": "global.css"
   },
   "node_modules/@fontsource/inter/files/inter-all-400-normal.woff": {
     "file": "_app/immutable/assets/inter-all-400-normal.f824029b.woff",
@@ -466,10 +509,10 @@
     "src": "node_modules/@fontsource/ubuntu-mono/files/ubuntu-mono-latin-ext-400-normal.woff2"
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/entry/start.477492ab.js",
+    "file": "_app/immutable/entry/start.699bcf32.js",
     "imports": [
-      "_index.c7992fe2.js",
-      "_index.12c3ab83.js"
+      "_index.b223fad9.js",
+      "_index.3f3d9422.js"
     ],
     "isEntry": true,
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js"

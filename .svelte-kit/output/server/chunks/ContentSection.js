@@ -1,4 +1,4 @@
-import { c as create_ssr_component, b as escape, i as compute_rest_props, j as spread, k as escape_object, p as is_void, q as compute_slots, v as validate_component, e as each, a as add_attribute } from "./index2.js";
+import { c as create_ssr_component, b as escape, j as compute_rest_props, k as spread, l as escape_object, q as is_void, r as compute_slots, v as validate_component, e as each, a as add_attribute } from "./index2.js";
 import { H as HttpRegex } from "./regex.js";
 import { I as Image } from "./Image.js";
 const Tag_svelte_svelte_type_style_lang = "";

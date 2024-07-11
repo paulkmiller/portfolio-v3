@@ -1,4 +1,4 @@
-import { c as create_ssr_component, a as add_attribute, g as add_styles, b as escape } from "./index2.js";
+import { c as create_ssr_component, a as add_attribute, d as add_styles, b as escape } from "./index2.js";
 const Image_svelte_svelte_type_style_lang = "";
 const css = {
   code: "figure.svelte-kkiy50{height:100%;width:100%;display:inline-block}img.svelte-kkiy50{width:100%;height:100%;object-fit:contain}figcaption.svelte-kkiy50{text-align:center;font-size:0.9rem;margin:0.5rem}",

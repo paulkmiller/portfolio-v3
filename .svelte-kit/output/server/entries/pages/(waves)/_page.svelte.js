@@ -1,4 +1,4 @@
-import { c as create_ssr_component, g as add_styles, b as escape, a as add_attribute, o as onDestroy, e as each, v as validate_component, h as null_to_empty } from "../../../chunks/index2.js";
+import { c as create_ssr_component, d as add_styles, b as escape, a as add_attribute, o as onDestroy, e as each, v as validate_component, i as null_to_empty } from "../../../chunks/index2.js";
 import { S as Socials, E as Email } from "../../../chunks/Socials.js";
 import { B as Button } from "../../../chunks/Button.js";
 import { C as ContentSection, B as BlogPostCard, a as Card, T as Tag } from "../../../chunks/ContentSection.js";
@@ -300,12 +300,12 @@ const ProjectCard = create_ssr_component(($$result, $$props, $$bindings, slots) 
 });
 const ParticlesBackground_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: "#particles-js.svelte-103dmrt{position:absolute;width:100%;height:100%;background:linear-gradient(to bottom, rgb(28, 30, 38), rgba(28, 30, 38, 0) 20%, rgba(28, 30, 38, 0) 80%, rgb(28, 30, 38));transform:translateY(-100px)}@media(max-width: 767px){#particles-js.svelte-103dmrt{transform:translateY(0px)}}",
+  code: "#particles-js.svelte-257e0z{position:absolute;width:100%;height:100%;transform:translateY(-100px)}@media(max-width: 767px){#particles-js.svelte-257e0z{transform:translateY(0px)}}",
   map: null
 };
 const ParticlesBackground = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$1);
-  return `<div id="particles-js" class="svelte-103dmrt"></div>`;
+  return `<div id="particles-js" class="svelte-257e0z"></div>`;
 });
 const Projects_svelte_svelte_type_style_lang = "";
 const css = {

@@ -1,4 +1,4 @@
-import { c as create_ssr_component, i as compute_rest_props, j as spread, k as escape_object, l as escape_attribute_value, p as is_void, q as compute_slots } from "./index2.js";
+import { c as create_ssr_component, j as compute_rest_props, k as spread, l as escape_object, p as escape_attribute_value, q as is_void, r as compute_slots } from "./index2.js";
 import { H as HttpRegex } from "./regex.js";
 const Button_svelte_svelte_type_style_lang = "";
 const css = {
