@@ -46,5 +46,9 @@
 		@media (pointer: coarse) {
 			display: none;
 		}
+    &:hover {
+      height: 50px;
+      width: 50px;
+    }
 	}
 </style>

@@ -18,15 +18,17 @@
   <div class="info">
     <h1>Paul Miller</h1>
     <h2>
-      I am a cat dad, gamer, and...
+      I am a cat dad and...
       <SparklingHighlight color="secondary"
         >Front End Developer!</SparklingHighlight
       >
     </h2>
     <p>
       Bringing Designs to Life <span class="secondary">&</span>
-      probably playing<br /> <a href="https://steamcommunity.com/id/Kahram/" target="_blank">games</a>, <Tooltip {tip}><a href="https://www.instagram.com/obewan_kanobi/" target="_blank">exploring the area</a></Tooltip>, 
-      or petting my cats.
+      probably <br /> 
+        <Tooltip {tip}>
+          <a href="https://www.instagram.com/obewan_kanobi/" target="_blank">exploring</a>
+        </Tooltip> the area or petting my cats.
     </p>
     <!-- <p>
       Bringing Designs to Life <span class="secondary">&</span><br />

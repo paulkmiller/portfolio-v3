@@ -11,8 +11,7 @@
   </div>
   <div class="content">
     <div class="credits">
-      Site powered by <a href="https://kit.svelte.dev/">Svelte</a>,
-      <a href="https://iconoir.com/">Iconoir</a> and ☕
+      Made with pain. &lt;3
     </div>
     <div class="socials">
       <Socials />
